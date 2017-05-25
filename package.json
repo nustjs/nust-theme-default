@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/nustjs/nust-theme-default/issues"
   },
-  "homepage": "https://github.com/nustjs/nust-theme-default#readme"
+  "homepage": "https://github.com/nustjs/nust-theme-default#readme",
+  "dependencies": {
+    "gitment": "0.0.3"
+  }
 }
