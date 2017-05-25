@@ -1,0 +1,406 @@
+/**
+ * aotu.reset inspired by http://typo.sofi.sh/
+ */
+
+*, *:before, *:after
+  box-sizing: border-box
+
+::-webkit-input-placeholder /* WebKit, Blink, Edge */
+  color: $placeholder-color
+::-moz-placeholder /* Mozilla Firefox 19+ */
+   color: $placeholder-color
+   opacity: 1
+:-ms-input-placeholder /* Internet Explorer 10-11 */
+   color:$placeholder-color
+
+html,body
+  display: block
+  height: 100%
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td 
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-style: inherit
+  font-family: inherit
+  font-size: 100%
+  vertical-align: baseline
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, main
+  display: block
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video
+  display: inline-block
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls])
+  display: none
+  height: 0
+
+/* Hide the overflow in IE. */
+svg:not(:root)
+  overflow: hidden
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea, optgroup
+  font: $font-weight $font-size/$line-height $font-family
+
+/* 去掉各Table cell 的边距并让其边重合 */
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+/* 去除默认边框 */
+fieldset, img
+  border: 0
+
+/* 块/段落引用 */
+blockquote
+  position: relative
+  color: $color-grey
+  font-weight: 400
+  border: 1px solid $color-grey-lite
+  border-left: 2px solid $color-accent
+  padding: .5em 1em
+  margin: 1em 0
+  & p
+    margin-bottom: 0.5em !important
+  & *:last-child
+    margin-bottom: 0 !important
+
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym, abbr
+  border-bottom: 1px dotted
+  font-variant: normal
+
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr
+  cursor: help
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title]
+  border-bottom: none /* 1 */
+  text-decoration: underline /* 2 */
+  text-decoration: underline dotted /* 2 */
+
+/* 一致的 del 样式 */
+del
+  text-decoration: line-through
+
+address, caption, cite, code, dfn, em, th, var
+  font-style: normal
+  font-weight: 400
+
+template
+  display: none
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol
+  list-style: none
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th
+  text-align: left
+
+q:before, q:after
+  content: ''
+
+/* 统一上标和下标 */
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+
+:root sub, :root sup
+  vertical-align: baseline; /* for ie9 and other modern browsers */
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+body
+  background: #f4f5f5
+  color: $color-default
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a
+  color: $color-link
+  text-decoration: none
+  background-color: transparent /* 1 */
+  -webkit-text-decoration-skip: objects /* 2 */
+  &:hover
+    color: $color-accent
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active, a:hover
+  outline-width: 0
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark
+  background: #fffdd1
+  border-bottom: 1px solid #ffedce
+  padding: 2px
+  margin: 0 5px
+
+/* 代码片断 */
+pre, code, pre tt
+  font-family: $font-mono
+  word-break: break-all
+pre
+  background: $bg-block
+  border: 1px solid $color-border
+  padding: 1em 1.2em
+  display: block
+  font-size: 1em
+  -webkit-overflow-scrolling: touch
+code
+  background: $bg-block
+  padding: 0 0.3em
+
+/* 一致化 horizontal rule */
+hr
+  border: none
+  border-bottom: 1px solid #cfcfcf
+  margin-bottom: 0.8em
+  height: 10px
+
+/* 底部印刷体、版本等标记 */
+small,
+  /* 图片说明 */
+figcaption
+  font-size: 0.9em
+  color: $color-grey
+
+strong, b
+  font-weight: 400
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn
+  font-style: italic
+
+/* 可拖动文件添加拖动手势 */
+[draggable]
+  cursor: move
+
+/* clearfix */
+.clearfix
+  zoom: 1
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+/* basic title styles */
+h1, h2, h3, h4, h5, h6
+  font-weight: $font-weight-title
+  line-height: $line-height-title
+  font-family: $font-family-title
+  color: $color-dark
+
+/* responsive img */
+img
+  max-width: 100%
+  // Remove the border on images inside links in IE 10-
+  border-style: none
+  vertical-align: top
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ */
+button, input, select, textarea, optgroup
+  margin: 0 /* 1 */
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input
+  /* 1 */
+  overflow: visible
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button, select
+  text-transform: none /* 1 */
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button, html [type="button"], [type="reset"], [type="submit"] /* 1 */
+  -webkit-appearance: button /* 2 */
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner
+  border-style: none
+  padding: 0
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring
+  outline: 1px dotted ButtonText
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend
+  color: inherit /* 2 */
+  display: table /* 1 */
+  max-width: 100% /* 1 */
+  padding: 0 /* 3 */
+  white-space: normal /* 1 */
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress
+  display: inline-block /* 1 */
+  vertical-align: baseline /* 2 */
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea
+  overflow: auto
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"], [type="radio"]
+  box-sizing: border-box /* 1 */
+  padding: 0 /* 2 */
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button
+  height: auto
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"]
+  -webkit-appearance: textfield /* 1 */
+  outline-offset: -2px /* 2 */
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration
+  -webkit-appearance: none
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button
+  -webkit-appearance: button /* 1 */
+  font: inherit /* 2 */
+
+input,
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea
+  -webkit-appearance:none
+  -moz-appearance:none
+  appearance:none
+  &:focus
+    outline: 0
+    border-color: #00BCD4
+
+select:focus
+  outline: 0
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden]
+  display: none
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in all browsers.
+ */
+summary
+  display: list-item
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1, h2, h3, h4, h5, h6
+  font-weight: 300
+  margin: 30px 0
+
+h4, h5, h6
+  margin: 20px 0
+
+h1
+  font-size: 46px
+
+h2
+  font-size: 34px
+
+h3
+  font-size: 28px
+
+h4
+  font-size: 24px
+
+h5
+  font-size: 20px
+
+h6
+  font-size: 16px

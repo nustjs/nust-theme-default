@@ -1,0 +1,26 @@
+{
+  "name": "nust-theme-default",
+  "version": "1.0.0",
+  "description": "The elegant default theme for Nust.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nustjs/nust-theme-default.git"
+  },
+  "keywords": [
+    "nust",
+    "nustjs",
+    "nust.js",
+    "nuxt",
+    "nuxt.js"
+  ],
+  "author": "mamboer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nustjs/nust-theme-default/issues"
+  },
+  "homepage": "https://github.com/nustjs/nust-theme-default#readme"
+}

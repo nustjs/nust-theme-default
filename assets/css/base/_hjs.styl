@@ -1,0 +1,25 @@
+$code_theme = nust-config("code_theme")
+
+if $code_theme == "light"
+  $hjs-background   = $bg-block
+  $hjs-current-line = #efefef
+  $hjs-selection    = #d6d6d6
+  $hjs-foreground   = #35495e
+
+if $code_theme == "dark"
+  $hjs-background   = #1d1f21
+  $hjs-current-line = #282a2e
+  $hjs-selection    = #373b41
+  $hjs-foreground   = #c5c8c6
+
+// hjs overrides
+.hljs
+  padding: 0
+
+
+.nust-code
+  border-radius: 3px
+  code
+    font-size: 0.9em
+    background: $hjs-background
+    color: $hjs-foreground

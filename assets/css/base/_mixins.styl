@@ -1,0 +1,45 @@
+/**
+ * Based on 960 grid system, inspired by http://bulma.io/documentation/layout/container/
+ * Support both of 12 and 16 columns
+ * Gutter width: 20px
+ * 1. Tablet: 768 / (12*16) = 4
+ * 2. Desktop: 960 / (12*16) = 5
+ * 3. Widescreen: 1152 / (12*16) = 6
+ * 4. HD: 1344 / (12*16) = 7
+ * 5. FHD: 1536 / (12*16) = 8
+ */
+
+// mixins
+mobile()
+  @media (max-width: $breakpoint-mobile)
+    {block}
+
+tablet()
+  @media (min-width: $breakpoint-tablet)
+    {block}
+
+desktop()
+  @media (min-width: $breakpoint-desktop)
+    {block}
+
+widescreen()
+  @media (min-width: $breakpoint-widescreen)
+    {block}
+
+hd()
+  @media (min-width: $breakpoint-hd)
+    {block}
+
+fhd()
+  @media (min-width: $breakpoint-fhd)
+    {block}
+
+// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
+clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}

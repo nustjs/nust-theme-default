@@ -1,0 +1,119 @@
+.grid
+  width: 100%
+  margin auto
+  height: 100%
+  &.is-fluid
+    margin: 0 $fgs-gutter !important
+    max-width: none !important
+    width: auto !important
+  &:before, &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+  +tablet()
+    width: $breakpoints['tablet']
+    &-h, &-hr, &-v, &-vr
+      display: flex
+    &-h
+      flex-direction: row
+    &-hr
+      flex-direction: row-reverse
+    &-v
+      flex-direction: column
+    &-vr
+      flex-direction: column-reverse
+  +desktop()
+    width: $breakpoints['desktop']
+  +widescreen()
+    width: $breakpoints['widescreen']
+  +hd()
+    width: $breakpoints['hd']
+  +fhd()
+    width: $breakpoints['fhd']
+
+.row
+  +tablet()
+    margin-left: - $fgs-gutter
+    margin-right: - $fgs-gutter
+
+.aside
+  width: $header-logo-width
+
+.col-size-flex
+  flex: 1
+
+
+// aside
+.aside
+  &-sec
+    padding-left $fgs-aside-pl
+    padding-right $fgs-aside-pr
+    margin-bottom $fgs-section-mb
+    img
+      width: 100%
+      display: block
+  &-tit
+    font-size 15px
+    text-align left
+    font-weight 400
+    margin-bottom $fgs-aside-title-mb
+    position: relative
+    text-indent: 8px
+    line-height: 1
+    border-left 3px solid $fgs-aside-title-bdcolor
+
+.affix
+  padding-top: $fgs-section-mb
+  width: 100%
+  +tablet()
+    width: $affix-width-tablet
+    float: right
+  +desktop()
+    width: $affix-width-desktop
+  +widescreen()
+    width: $affix-width-widescreen
+  +hd()
+    width: $affix-width-hd
+  +fhd()
+    width: $affix-width-fhd
+  &-sec
+    width: 100%
+    margin-bottom: $fgs-gutter
+    padding: $fgs-aside-pl
+    background-color: #fff
+    +tablet()
+      width: $affix-width-tablet
+      padding: $fgs-section-mb
+      border: 1px solid $affix-bdcolor
+    +desktop()
+      width: $affix-width-desktop
+    +widescreen()
+      width: $affix-width-widescreen
+    +hd()
+      width: $affix-width-hd
+    +fhd()
+      width: $affix-width-fhd
+  &-title
+    margin: 0 0 10px
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 16px
+    border-left: 3px solid $color-theme
+    text-indent: 8px
+    letter-spacing: 1px
+    line-height: 1
+  &-ct
+    padding-top: 10px
+
+// https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+.sticky-footer
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  &-main
+    padding-top: $fgs-section-mb
+    flex: 1
+
+.fixed-header
+  padding-top: $header-height

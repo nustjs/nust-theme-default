@@ -1,0 +1,36 @@
+.icon, .icon i
+{
+  box-sizing: content-box;
+  position: absolute;
+  &:before, &:after
+  {
+    box-sizing: content-box;
+    content: '';
+    position: absolute;
+  }
+}
+.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after
+{
+  transition: all 0.4s ease;
+}
+
+.Icon
+{
+  height: 21px;
+  width: 21px;
+  position: relative;
+  display: inline-block;
+}
+
+@import "_menu";
+@import "_close";
+@import "_search";
+@import "_remove";
+@import "_edit";
+@import "_download";
+@import "_eye";
+@import "_folder";
+@import "_file";
+@import "_flags";
+@import "_more_vertical";
+@import "_iconfont";

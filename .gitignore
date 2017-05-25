@@ -57,3 +57,18 @@ typings/
 # dotenv environment variables file
 .env
 
+.DS_Store
+
+*.lock
+
+# Nuxt and Nust build
+.nust
+.nuxt
+store/i18n.js
+store/index.js
+store/xdata.js
+plugins/axios.js
+plugins/i18n.js
+plugins/utils.js
+middleware/i18n.js
+
