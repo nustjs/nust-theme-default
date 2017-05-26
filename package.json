@@ -24,6 +24,11 @@
   },
   "homepage": "https://github.com/nustjs/nust-theme-default#readme",
   "dependencies": {
-    "gitment": "0.0.3"
+    "axios": "^0.16.1",
+    "gitment": "0.0.3",
+    "vue": "^2.3.3",
+    "vue-meta": "^1.0.4",
+    "vue-router": "^2.5.3",
+    "vuex": "^2.3.1"
   }
 }
