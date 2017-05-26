@@ -53,7 +53,6 @@ export default {
         }
       })
       // git comments
-      
       return c
     },
     bodyOffsetTop () {
@@ -61,7 +60,7 @@ export default {
     },
     finalToc () {
       let toc = this.toc.slice()
-      //gitment
+      // gitment
       toc.push({
         name: this.$t('text.comment'),
         to: '#comments'
@@ -72,7 +71,7 @@ export default {
   methods: {
     toggle () { this.$store.commit('toggle', 'visibleTOC') },
     scrolled () {
-      var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+      // var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
       var doc = document.documentElement
       var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
       var el = this.contents.find((pos) => {

@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import Affix from "~components/affix/Affix.vue"
-import PostToc from "~components/post/TOC.vue"
+import Affix from '~components/affix/Affix.vue'
+import PostToc from '~components/post/TOC.vue'
 export default {
   props: {
     post: {

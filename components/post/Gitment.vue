@@ -25,7 +25,6 @@ export default {
       let opts = configs.gitment
       opts.id = this.id
       opts.title = this.title
-      console.log(opts)
       var gitment = new Gitment(opts)
       gitment.render('comments')
     })

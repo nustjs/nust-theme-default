@@ -14,7 +14,6 @@
 <script>
 export default {
   components: {
-    
   },
   computed: {
     list () {
