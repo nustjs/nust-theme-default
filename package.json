@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/nustjs/nust-theme-default#readme",
   "dependencies": {
-    "gitment": "0.0.3"
+    "gitment": "0.0.3",
+    "vue-infinite-loading": "^2.1.3"
   }
 }

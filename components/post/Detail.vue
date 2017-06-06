@@ -31,6 +31,8 @@
   &-inner
     background: #fff
     padding: $fgs-section-mb
+  &-content
+    margin-bottom: $fgs-section-mb
   +tablet()
     width: $post-width-tablet
     padding-right $fgs-gutter

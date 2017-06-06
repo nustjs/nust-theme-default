@@ -1,5 +1,5 @@
 <template>
-  <notes-main :items="items"></notes-main>
+  <post-list :items="items"></post-list>
 </template>
 
 <style lang="stylus" scoped>
@@ -7,7 +7,7 @@
 
 <script>
 import axios from '~plugins/axios'
-import NotesMain from '~components/notes/Main.vue'
+import PostList from '~components/post/List.vue'
 export default {
   validate ({params}) {
     // must be int
@@ -20,7 +20,7 @@ export default {
     return res.data
   },
   components: {
-    NotesMain
+    PostList
   }
 }
 </script>

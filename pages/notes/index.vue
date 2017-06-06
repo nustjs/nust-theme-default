@@ -1,5 +1,5 @@
 <template>
-  <notes-main :items="items"></notes-main>
+  <post-list :items="items" :total="total"></post-list>
 </template>
 
 <style lang="stylus" scoped>
@@ -7,7 +7,7 @@
 
 <script>
 import axios from '~plugins/axios'
-import NotesMain from '~components/notes/Main.vue'
+import PostList from '~components/post/List.vue'
 export default {
   async asyncData ({store}) {
     let langKey = store.state.i18n.curKey
@@ -16,7 +16,7 @@ export default {
     return res.data
   },
   components: {
-    NotesMain
+    PostList
   }
 }
 </script>

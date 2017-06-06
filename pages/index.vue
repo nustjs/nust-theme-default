@@ -15,6 +15,7 @@
               <post-mini :post="item"></post-mini>
             </template>
           </div>
+          <infinite-loader :size="total"></infinite-loader>
         </div>
       </div>
     </section>
@@ -27,6 +28,7 @@ import axios from '~plugins/axios'
 // common components
 import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
+import InfiniteLoader from '~components/post/InfiniteLoader.vue'
 // private components
 import Banner from '~components/home/Banner.vue'
 import CateNav from '~components/home/CateNav.vue'
@@ -40,6 +42,7 @@ export default {
     Banner,
     CateNav,
     PostMini,
+    InfiniteLoader,
     QCode,
     FavLink,
     Cases

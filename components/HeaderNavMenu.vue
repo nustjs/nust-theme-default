@@ -2,7 +2,7 @@
   <ul class="menu">
     <li class="menu-item" v-for="item in list">
       <a v-if="isExternal(item.path)" :href="item.path" class="menu-link" :target="item.target ? '_blank' : null">{{ item.name }}</a>
-      <nuxt-link class="menu-link" :to="item.path" v-else>
+      <nuxt-link class="menu-link" :to="item.path" v-else exact>
         {{ item.name }}
       </nuxt-link>
     </li>
