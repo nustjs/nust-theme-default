@@ -1,5 +1,5 @@
 <template>
-  <div class="posts clearfix">
+  <div class="nust-fragment">
     <template v-for="item in items">
       <post-mini :post="item"></post-mini>
     </template>

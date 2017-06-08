@@ -1,0 +1,1 @@
+The server-side pager is inspired by https://github.com/vue-bulma/pagination

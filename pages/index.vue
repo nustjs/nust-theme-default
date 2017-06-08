@@ -15,7 +15,8 @@
               <post-mini :post="item"></post-mini>
             </template>
           </div>
-          <infinite-loader :size="total"></infinite-loader>
+          <!--<infinite-loader :size="total"></infinite-loader>-->
+          <pager :currentPage="1" :lastPage="10" :urlPrefix="pagerUrlRoot"></pager>
         </div>
       </div>
     </section>
@@ -29,6 +30,7 @@ import axios from '~plugins/axios'
 import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
 import InfiniteLoader from '~components/post/InfiniteLoader.vue'
+import Pager from '~components/pager/Pager.vue'
 // private components
 import Banner from '~components/home/Banner.vue'
 import CateNav from '~components/home/CateNav.vue'
@@ -43,6 +45,7 @@ export default {
     CateNav,
     PostMini,
     InfiniteLoader,
+    Pager,
     QCode,
     FavLink,
     Cases
@@ -72,6 +75,20 @@ export default {
         { name: 'twitter:image', content: 'https://i.imgur.com/PzEm5j2.png' },
         { name: 'twitter:image:alt', content: 'Nust Logo' }
       ]
+    }
+  },
+  computed: {
+    // TODO: 封装到pager.vue里面
+    pagerUrlRoot () {
+      const langKey = this.$store.state.i18n.curKey
+      const defaultKey = this.$store.state.i18n.key
+      let url = ''
+      if (langKey === defaultKey) {
+        url = `/notes/page`
+      } else {
+        url = `${langKey}/notes/page`
+      }
+      return url
     }
   }
 }
