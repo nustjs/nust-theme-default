@@ -18,8 +18,7 @@ export default {
   },
   data () {
     return {
-      current: 1,
-      pages: {}
+      current: 1
     }
   },
   computed: {
@@ -35,13 +34,15 @@ export default {
     },
     async onInfinite () {
       if (this.current === this.size) {
+        this.$refs.infiniteLoading.$emit('$InfiniteLoading:complete')
         this.$refs.infiniteLoading.$destroy()
         return
       }
       this.current ++
       let url = this.apiUrl(this.current)
       let res = await axios.get(url)
-      console.log(res.data) // eslint-disable-line
+      this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded')
+      document.querySelector('#posts').innerHTML += res.data
     }
   },
   components: {

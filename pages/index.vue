@@ -10,13 +10,13 @@
           <fav-link></fav-link>
         </div>
         <div class="col-size-flex">
-          <div class="posts clearfix">
+          <div class="posts clearfix" id="posts">
             <template v-for="item in items">
               <post-mini :post="item"></post-mini>
             </template>
           </div>
-          <!--<infinite-loader :size="total"></infinite-loader>-->
-          <pager :currentPage="1" :lastPage="10" :urlPrefix="pagerUrlRoot"></pager>
+          <infinite-loader :size="total"></infinite-loader>
+          <!--<pager :currentPage="1" :lastPage="total"></pager>-->
         </div>
       </div>
     </section>
@@ -29,7 +29,7 @@ import axios from '~plugins/axios'
 // common components
 import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
-import InfiniteLoader from '~components/post/InfiniteLoader.vue'
+import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
 import Pager from '~components/pager/Pager.vue'
 // private components
 import Banner from '~components/home/Banner.vue'
@@ -75,20 +75,6 @@ export default {
         { name: 'twitter:image', content: 'https://i.imgur.com/PzEm5j2.png' },
         { name: 'twitter:image:alt', content: 'Nust Logo' }
       ]
-    }
-  },
-  computed: {
-    // TODO: 封装到pager.vue里面
-    pagerUrlRoot () {
-      const langKey = this.$store.state.i18n.curKey
-      const defaultKey = this.$store.state.i18n.key
-      let url = ''
-      if (langKey === defaultKey) {
-        url = `/notes/page`
-      } else {
-        url = `${langKey}/notes/page`
-      }
-      return url
     }
   }
 }

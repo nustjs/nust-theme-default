@@ -19,7 +19,7 @@
 .footer
     margin-top: 30px
     background: #f8f8f8
-    padding: 20px 0
+    padding: 35px 0 20px
     text-align: center
     border-top: 1px solid #eee
     +mobile()

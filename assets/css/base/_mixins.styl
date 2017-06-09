@@ -43,3 +43,21 @@ clearfix() {
   }
   &:after { clear: both; }
 }
+
+control()
+  -moz-appearance: none
+  -webkit-appearance: none
+  border: 1px solid transparent
+  border-radius: 3px
+  box-shadow: none
+  font-size: 100%
+  padding: 0.35em 0.5em
+  vertical-align: top
+  // States
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active
+    outline: none
+  &[disabled]
+    cursor: not-allowed

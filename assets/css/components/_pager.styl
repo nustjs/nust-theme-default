@@ -1,0 +1,76 @@
+$pagination-background:= $color-white
+$pagination-border:= $color-border-darker
+
+$pagination-hover:= $color-accent
+$pagination-hover-border:= darken($color-border-darker, 10%)
+
+$pagination-focus:= $color-accent
+$pagination-focus-border:= $pagination-hover-border
+
+$pagination-disabled:= $color-sidebar-text
+$pagination-disabled-background:= $color-border-darker
+$pagination-disabled-border:= $color-border-darker
+
+$pagination-current:= $color-white
+$pagination-current-background:= $color-accent
+$pagination-current-border:= $color-accent
+
+$pagination-ellipsis:= $color-grey
+
+$pagination-shadow-inset:= inset 0 1px 2px rgba($color-dark, 0.2)
+
+.pagination
+  font-size: 100%
+  text-align: center
+  margin-left: $fgs-gutter
+  margin-top: $fgs-gutter
+  clearfix()
+  // Sizes
+  &.is-small
+    font-size: 85%
+  &.is-medium
+    font-size: 125%
+  &.is-large
+    font-size: 150%
+  &-list
+    clearfix()
+    li
+      float: left
+      display: flex
+      align-items: center
+      justify-content: center
+    +mobile()
+      display: none
+  &-previous, &-next
+    float: right
+    white-space: nowrap
+  &-previous, &-next, &-link, &-ellipsis
+    control()
+    user-select: none
+    font-size: 1em
+    margin: 0 0.25em
+  &-previous, &-next, &-link
+    border-color: $pagination-border
+    min-width: 2.5em
+    &:hover
+      border-color: $pagination-hover-border
+      color: $pagination-hover
+    &:focus
+      border-color: $pagination-focus-border
+    &:active
+      box-shadow: $pagination-shadow-inset
+    &[disabled]
+      background-color: $pagination-disabled-background
+      border-color: $pagination-border
+      box-shadow: none
+      color: $pagination-disabled
+      opacity: 0.5
+  &-ellipsis
+    color: $pagination-ellipsis
+    pointer-events: none
+    line-height: 1
+  &-link
+    &.is-current
+      background-color: $pagination-current-background
+      border-color: $pagination-current-border
+      color: $pagination-current
