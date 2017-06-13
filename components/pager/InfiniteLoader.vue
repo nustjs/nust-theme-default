@@ -29,7 +29,7 @@ export default {
   methods: {
     apiUrl (pageNum) {
       const rootUrl = this.$store.state.urlRoot
-      const url = `${rootUrl}notes/page/${pageNum}`
+      const url = `${rootUrl}notes/fragment/${pageNum}`
       return url
     },
     async onInfinite () {
@@ -41,6 +41,7 @@ export default {
       this.current ++
       let url = this.apiUrl(this.current)
       let res = await axios.get(url)
+      this.$refs.infiniteLoading.$emit('$InfiniteLoading:complete')
       this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded')
       document.querySelector('#posts').innerHTML += res.data
     }
