@@ -24,9 +24,10 @@
   },
   "homepage": "https://github.com/nustjs/nust-theme-default#readme",
   "dependencies": {
+    "fuse.js": "^3.0.4",
     "gitment": "0.0.3",
-    "vue-infinite-loading": "^2.1.3",
-    "nust-generator-fuse": "latest"
+    "nust-generator-fuse": "latest",
+    "vue-infinite-loading": "^2.1.3"
   },
   "devDependencies": {
     "less": "^2.7.2",

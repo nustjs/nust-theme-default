@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import NuxtHeaderNavSearch from '~components/HeaderNavSearch.vue'
+import NuxtHeaderNavSearch from '~components/common/FuseSearch.vue'
 import NuxtHeaderNavMenu from '~components/HeaderNavMenu.vue'
 import NuxtHeaderNavLang from '~components/HeaderNavLang.vue'
 
