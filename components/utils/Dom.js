@@ -6,6 +6,21 @@ const Dom = {
     let margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom'])
 
     return Math.ceil(el.offsetHeight + margin)
+  },
+  getParents (el) {
+    let els = []
+    while (el) {
+      els.unshift(el)
+      el = el.parentNode
+    }
+    return els
+  },
+  getParentWithID (el, ...ids) {
+    let els = Dom.getParents(el)
+    el = els.find(o => {
+      return ids.indexOf(o.id) > -1
+    })
+    return el
   }
 }
 

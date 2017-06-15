@@ -6,7 +6,7 @@
       <li><a href="https://github.com/o2team/o2team.github.io"target="_blank"><i class="iconfont icon-github"></i></a></li>
     </ul>
     <div class="footer-sec footer-copyright">
-      <p>Designed by <a href="https://aotu.io" target="_blank">凹凸实验室</a> @<a target="_blank" href="https://jdc.jd.com">京东用户体验设计部</a></p>
+      <p>Designed by <a href="https://aotu.io" target="_blank">{{ $t('text.aotulabs') }}</a> @<a target="_blank" href="https://jdc.jd.com">{{ $t('text.jdc') }}</a></p>
       <p>Copyright &copy; {{ new Date().getFullYear() }}. All Rights Reserved.</p>
       <p><a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备15077732号-2</a></p>
     </div>

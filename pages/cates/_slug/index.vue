@@ -1,5 +1,5 @@
 <template>
-  <div class="home fixed-header sticky-footer">
+  <div class="page-cates fixed-header sticky-footer">
     <banner></banner>
     <section class="sticky-footer-main">
       <div class="grid grid-h">
@@ -39,6 +39,9 @@ import FavLink from '~components/home/FavLinks.vue'
 import Cases from '~components/home/Cases.vue'
 
 export default {
+  validate ({params, store}) {
+    return store.utils.isAlphaNumDash(params.slug)
+  },
   components: {
     AppFooter,
     Banner,
@@ -50,15 +53,16 @@ export default {
     FavLink,
     Cases
   },
-  async asyncData ({store}) {
+  async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
+    let slug = params.slug
     let pageNum = 1
-    let res = await axios.get(`post/list/${langKey}/${pageNum}`)
+    let res = await axios.get(`cate/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
   },
   head () {
     return {
-      title: this.$t('homepage.meta.title'),
+      title: `${this.$t('homepage.meta.title')} | ${this.title}`,
       meta: [
         { name: 'description', hid: 'description', content: this.$t('homepage.meta.description') },
         // Open Grapg

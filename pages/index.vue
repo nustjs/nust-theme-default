@@ -16,7 +16,7 @@
             </template>
           </div>
           <infinite-loader :size="total"></infinite-loader>
-          <!--<pager :currentPage="1" :lastPage="total"></pager>-->
+          <!--<pager :currentPage="page" :lastPage="total"></pager>-->
         </div>
       </div>
     </section>
@@ -30,7 +30,7 @@ import axios from '~plugins/axios'
 import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
 import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
-import Pager from '~components/pager/Pager.vue'
+// import Pager from '~components/pager/Pager.vue'
 // private components
 import Banner from '~components/home/Banner.vue'
 import CateNav from '~components/home/CateNav.vue'
@@ -45,7 +45,7 @@ export default {
     CateNav,
     PostMini,
     InfiniteLoader,
-    Pager,
+    // Pager,
     QCode,
     FavLink,
     Cases

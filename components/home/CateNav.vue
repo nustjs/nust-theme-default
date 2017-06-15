@@ -2,7 +2,7 @@
 <nav class="cates">
   <ul class="cate-menu">
     <li class="cate-menu-item" v-for="item in list">
-      <nuxt-link class="cate-menu-link" :to="item.url">
+      <nuxt-link class="cate-menu-link" :to="item.url" :exact="item.exact">
         <i class="iconfont" :class="item.icon"></i>
         <span class="cate-menu-txt">{{ item.title }}</span>
       </nuxt-link>
