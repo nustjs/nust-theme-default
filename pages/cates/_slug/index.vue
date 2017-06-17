@@ -1,5 +1,5 @@
 <template>
-  <div class="page-cates fixed-header sticky-footer">
+  <div class="main-cates fixed-header sticky-footer">
     <banner></banner>
     <section class="sticky-footer-main">
       <div class="grid grid-h">

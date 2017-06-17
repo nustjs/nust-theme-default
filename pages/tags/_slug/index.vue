@@ -1,16 +1,15 @@
 <template>
-  <div class="page-tags fixed-header sticky-footer">
+  <div class="main-tags fixed-header sticky-footer">
     <banner></banner>
     <section class="sticky-footer-main">
       <div class="grid grid-h">
         <div class="aside">
-          <tag-nav></tag-nav>
           <q-code></q-code>
           <cases></cases>
-          <!-- 标签选择面板 -->
           <fav-link></fav-link>
         </div>
         <div class="col-size-flex">
+          <tag-nav :items="tags" :tag="tag"></tag-nav>
           <div class="posts clearfix" id="posts">
             <template v-for="item in items">
               <post-mini :post="item"></post-mini>
@@ -34,7 +33,7 @@ import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
 // import Pager from '~components/pager/Pager.vue'
 // private components
 import Banner from '~components/home/Banner.vue'
-import CateNav from '~components/home/CateNav.vue'
+import TagNav from '~components/tags/TagNav.vue'
 import QCode from '~components/home/QRCode.vue'
 import FavLink from '~components/home/FavLinks.vue'
 import Cases from '~components/home/Cases.vue'
@@ -46,7 +45,7 @@ export default {
   components: {
     AppFooter,
     Banner,
-    CateNav,
+    TagNav,
     PostMini,
     InfiniteLoader,
     // Pager,
@@ -60,6 +59,11 @@ export default {
     let pageNum = 1
     let res = await axios.get(`tag/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
+  },
+  computed: {
+    tag () {
+      return {title: this.title, cnt: this.weight}
+    }
   },
   head () {
     return {

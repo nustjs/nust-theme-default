@@ -61,3 +61,7 @@ control()
     outline: none
   &[disabled]
     cursor: not-allowed
+
+btnGradientBg($direction, $startColor, $endColor)
+  background: $startColor
+  background: linear-gradient($direction, $startColor 0%, $endColor 80%, $endColor 100%)
