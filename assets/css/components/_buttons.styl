@@ -1,15 +1,16 @@
 .btn
   display: inline-block
   font-weight: 400
-  font-size: 16px
   letter-spacing: 0.07em
   text-transform: uppercase
   color: #ffffff
   position: relative
+  z-index: 1
   cursor: pointer
   touch-action: manipulation
   border: 1px solid transparent
   background-image: none
+  background-color: transparent
   white-space: nowrap
   user-select: none
   padding: 0
@@ -31,7 +32,7 @@
     margin-top: -2px
     font-size: 1.265em
     vertical-align: middle
-  span
+  &-inner
     display: inline-block
     padding: 10px 15px
     border-radius: 3px
@@ -40,9 +41,12 @@
     will-change: transform, filter
     transform-style: preserve-3d
     transition: all 0.3s ease-out
+  &:focus
+    outline: none
   &:hover
     text-decoration: none
-    span
+    color: #ffffff
+    &-inner
       filter: brightness(.9) contrast(1.2)
       transform: scale(1)
     &:before
@@ -50,7 +54,7 @@
       opacity: 1
       filter: blur(16px)
   &:active
-    span
+    &-inner
       filter: brightness(1) contrast(1)
       transform: scale(1)
       transition: all 0.2s ease-out
@@ -59,8 +63,29 @@
       filter: blur(5px) brightness(0.85)
       transition: all 0.2s ease-out
   &-primary
-    span, &:before
-      btnGradientBg(180deg, lighten($color-theme, 10%), $color-theme)
-    span
+    .btn-inner, &:before
+      btnGradientBg(180deg, lighten($color-theme, 5%), $color-theme)
+    .btn-inner
       &:hover
-        btnGradientBg(120deg, lighten($color-theme, 10%), $color-theme)
+        btnGradientBg(120deg, lighten($color-theme, 5%), $color-theme)
+  &-info
+    .btn-inner, &:before
+      btnGradientBg(180deg, lighten($color-info, 5%), $color-info)
+    .btn-inner
+      &:hover
+        btnGradientBg(120deg, lighten($color-info, 5%), $color-info)
+  &-small
+    font-size: 14px
+    .btn-inner
+      padding: 4px 8px
+      border-radius: 2px
+    &:before
+      left: 8px
+      right: 8px
+      top: 5px
+      bottom: 5px
+      filter: blur(10px) brightness(0.9)
+    &:hover
+      &:before
+        bottom: -3px
+        filter: blur(12px)

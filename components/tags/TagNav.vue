@@ -1,20 +1,22 @@
 <template>
 <div class="tagnav">
   <div class="tagnav-hd">
-    <button class="btn btn-primary">
-      <span>显示其他标签</span>
+    <button class="btn btn-primary btn-small btn-showtags" @click="toggleTags">
+      <span class="btn-inner">{{ $t('text.tag_show_all') }}</span>
     </button>
     <div class="tagnav-tip" v-html="$t('text.tag_post_tip', tag)"></div>
   </div>
-  <nav class="tags">
+  <transition name="tags" enter-active-class="animated fadeInDown" leave-active-class="animated foldUp">
+  <nav class="tags" v-if="showTags">
     <ul class="tag-menu">
       <li class="tag-menu-item" v-for="item in items">
         <nuxt-link class="tag-menu-link" :to="item.route" :exact="item.exact">
-          <span class="tag-menu-txt"># {{ item.title }}</span><span class="tag-menu-lbl">{{ item.weight }}</span>
+          <span class="tag-menu-txt">{{ item.title }}</span>
         </nuxt-link>
       </li>
     </ul>
   </nav>
+  </transition>
 </div>
 </template>
 
@@ -33,6 +35,16 @@ export default {
   components: {
   },
   computed: {
+  },
+  methods: {
+    toggleTags () {
+      this.showTags = !this.showTags
+    }
+  },
+  data () {
+    return {
+      showTags: false
+    }
   }
 }
 </script>
@@ -41,18 +53,14 @@ export default {
 @import '~assets/css/base/_base.styl';
 .tags
   font-size: 16px
-  margin-bottom $fgs-section-mb
-  margin-left ($fgs-gutter - 5)
-  margin-right ($fgs-gutter - 5)
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1)
+  padding: ($fgs-gutter - 5)
+  background: #fff
+  position: relative
+  z-index: 1
+  overflow: hidden
+  border-top: 1px solid $color-border
   &::-webkit-scrollbar
       display: none
-  +tablet()
-    margin-left 0
-    margin-right 0
-    box-shadow: none
-    height 92px
-    overflow hidden
 
 .tag-menu
   clearfix()
@@ -81,7 +89,23 @@ export default {
       cursor: default
       &:hover
         color: $color-link
-  &-txt
-    margin-left: 15px
 
+.tagnav
+  margin-left: $fgs-gutter
+  margin-bottom: $fgs-gutter
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1)
+  overflow: hidden
+  &-hd
+    background: #fff
+    padding: 10px ($fgs-gutter - 5)
+    font-weight: 400
+    position: relative
+    z-index: 2
+  &-tip
+    height: 36px
+    line-height: 36px
+    .label
+      margin: 0 3px
+.btn-showtags
+  float: right
 </style>
