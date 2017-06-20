@@ -1,21 +1,18 @@
 <template>
-  <div>
-    <section class="Landscape">
-      <img src="~static/triangles.png" alt="Logo nuxt" class="Landscape__Image"/>
-      <h1 class="Landscape__Title">
-        {{ error.statusCode }}
-      </h1>
-      <h2 class="Landscape__SubTitle">
-        {{ $t(`errCodes.E${error.statusCode}`, error.message) }}
-      </h2>
-      <ul class="Landscape__List">
-        <li class="Landscape__List__Item">
-          <nuxt-link v-if="error.statusCode === 404" class="btn btn-primary" to="/" exact>
-            <span class="btn-inner">{{ $t('links.homepage') }}</span>
-          </nuxt-link>
-        </li>
-      </ul>
-    </section>
+  <div class="main-error fixed-header sticky-footer">
+    <div class="sticky-footer-main">
+      <section class="err">
+        <div class="err-bd">
+          <img src="~static/triangles.png" alt="Logo nuxt" class="err-img"/>
+          <h1 class="err-title">
+            {{ error.statusCode }}
+          </h1>
+          <h2 class="err-stitle">
+            {{ $t(`errCodes.E${error.statusCode}`, error.message) }}
+          </h2>
+        </div>
+      </section>
+    </div>
     <nuxt-footer></nuxt-footer>
   </div>
 </template>
@@ -32,44 +29,24 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.Landscape
-  min-height: 100vh
-  background-color: #fff
-  padding: 50px 15px
-  padding-top: 120px
+.sticky-footer-main
+  display flex
+.err
+  display flex
+  flex 1
+  align-items center
+  justify-content center
   text-align: center
-  @media (min-width: 991px)
-    padding: 100px 30px
-    padding-top: 180px
-  &__Image
-    &--mobile
-      display: inline-block
-      @media (min-width: 991px)
-        display: none
-    &--desktop
-      display: none
-      @media (min-width: 991px)
-        display: inline-block
-  &__Title
+  &-title
     font-weight: 300
     letter-spacing: 1px
     margin: 20px 0
     color: #35495e
     font-size: 128px
     line-height: 100px
-  &__SubTitle
+  &-stitle
     letter-spacing: 1px
     line-height: normal
     margin: 20px 0
     color: #35495e
-  &__List
-    list-style: none
-    margin: 0
-    padding: 0
-    &__Item
-      display: inline-block
-      padding: 20px 15px
-      padding-bottom: 0
-      .button
-        font-size: 16px
 </style>

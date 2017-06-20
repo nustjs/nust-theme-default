@@ -1,46 +1,52 @@
 <template>
-  <div class="posts-wrap">
-    <tag-nav :items="tags" :tag="tag"></tag-nav>
-    <div class="posts clearfix" id="posts">
-      <template v-for="item in items">
-        <post-mini :post="item"></post-mini>
-      </template>
-    </div>
-    <pager :currentPage="page" :lastPage="total" :urlRoot="pagerUrl"></pager>
+  <div class="main-tags fixed-header sticky-footer">
+    <banner></banner>
+    <section class="sticky-footer-main">
+      <div class="grid grid-h">
+        <div class="aside">
+          <q-code></q-code>
+          <cases></cases>
+          <fav-link></fav-link>
+        </div>
+        <div class="col-size-flex">
+          <tag-nav :items="items" :tag="null" :collapsable="false"></tag-nav>
+        </div>
+      </div>
+    </section>
+    <app-footer/>
   </div>
 </template>
 
 <script>
 import axios from '~plugins/axios'
 // common components
-import PostMini from '~components/post/Mini.vue'
-import Pager from '~components/pager/Pager.vue'
+import AppFooter from '~components/Footer.vue'
+// private components
+import Banner from '~components/home/Banner.vue'
 import TagNav from '~components/tags/TagNav.vue'
+import QCode from '~components/home/QRCode.vue'
+import FavLink from '~components/home/FavLinks.vue'
+import Cases from '~components/home/Cases.vue'
 
 export default {
-  validate ({params, store}) {
-    return store.utils.isAlphaNumDashUDCN(params.slug) && /^\d+$/.test(params.num)
-  },
   components: {
-    PostMini,
-    Pager,
-    TagNav
+    AppFooter,
+    Banner,
+    TagNav,
+    QCode,
+    FavLink,
+    Cases
   },
   async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
-    let slug = params.slug
-    let pageNum = params.num
-    let res = await axios.get(`tag/posts/${langKey}/${slug}/${pageNum}`)
+    let res = await axios.get(`tag/list/${langKey}`)
     return res.data
   },
   computed: {
-    pagerUrl () {
-      return `tags/${this.slug}`
-    }
   },
   head () {
     return {
-      title: `${this.$t('homepage.meta.title')} | ${this.title}`,
+      title: `${this.$t('homepage.meta.title')} | ${this.$t('text.tag_all')}`,
       meta: [
         { name: 'description', hid: 'description', content: this.$t('homepage.meta.description') },
         // Open Grapg

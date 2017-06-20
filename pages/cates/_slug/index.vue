@@ -1,57 +1,37 @@
 <template>
-  <div class="main-cates fixed-header sticky-footer">
-    <banner></banner>
-    <section class="sticky-footer-main">
-      <div class="grid grid-h">
-        <div class="aside">
-          <cate-nav></cate-nav>
-          <q-code></q-code>
-          <cases></cases>
-          <fav-link></fav-link>
-        </div>
-        <div class="col-size-flex">
-          <div class="posts clearfix" id="posts">
-            <template v-for="item in items">
-              <post-mini :post="item"></post-mini>
-            </template>
-          </div>
-          <infinite-loader :size="total"></infinite-loader>
-          <!--<pager :currentPage="page" :lastPage="total"></pager>-->
-        </div>
-      </div>
-    </section>
-    <app-footer/>
+  <div class="posts-wrap">
+    <div class="posts clearfix" id="posts" v-if="total">
+      <template v-for="item in items">
+        <post-mini :post="item"></post-mini>
+      </template>
+    </div>
+    <div class="notice notice-info" v-else v-show="showTip">
+        <button class="delete" @click="hideTip"></button>
+        {{ $t('text.cate_no_posts') }}
+    </div>
+    <infinite-loader :size="total" :url="url"></infinite-loader>
   </div>
 </template>
 
 <script>
 import axios from '~plugins/axios'
 // common components
-import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
 import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
-// import Pager from '~components/pager/Pager.vue'
-// private components
-import Banner from '~components/home/Banner.vue'
-import CateNav from '~components/home/CateNav.vue'
-import QCode from '~components/home/QRCode.vue'
-import FavLink from '~components/home/FavLinks.vue'
-import Cases from '~components/home/Cases.vue'
 
 export default {
   validate ({params, store}) {
     return store.utils.isAlphaNumDash(params.slug)
   },
   components: {
-    AppFooter,
-    Banner,
-    CateNav,
     PostMini,
-    InfiniteLoader,
-    // Pager,
-    QCode,
-    FavLink,
-    Cases
+    InfiniteLoader
+  },
+  data () {
+    return {
+      total: 0,
+      showTip: true
+    }
   },
   async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
@@ -59,6 +39,16 @@ export default {
     let pageNum = 1
     let res = await axios.get(`cate/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
+  },
+  computed: {
+    url () {
+      return `fragments/cate/${this.slug}/`
+    }
+  },
+  methods: {
+    hideTip () {
+      this.showTip = false
+    }
   },
   head () {
     return {
@@ -86,4 +76,6 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/css/base/_base.styl';
+.notice
+  margin-left: $fgs-gutter
 </style>

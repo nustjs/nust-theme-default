@@ -1,11 +1,11 @@
 <template>
   <div class="lang">
     <div class="lang-current" @click="show = !show">
-      <div class="flag " :class="flag"></div>
+      <div class="flag" :class="flag"></div>
     </div>
     <ul class="lang-list" :class="{ 'lang-list--visible': show }">
       <li class="lang-item" v-for="lang in langs" v-if="lang.iso !== $store.state.i18n.curKey">
-        <a class="flag " :class="lang.class" :href="lang.url + $route.path"></a>
+        <a class="flag" :class="lang.class" :href="lang.url"></a>
       </li>
     </ul>
   </div>
@@ -17,12 +17,30 @@ export default {
     return { show: false }
   },
   computed: {
-    flag () { return 'flag-' + this.$store.state.i18n.curKey },
+    flag () {
+      let item = this.$store.state.i18n.curItem
+      return `flag-${item.translation.flag || item.key}`
+    },
     langs () {
-      return [
-        { iso: 'cn', class: 'flag-cn', url: `${this.$store.state.urlRoot}` },
-        { iso: 'en', class: 'flag-en', url: `${this.$store.state.urlRoot}en/` }
-      ]
+      let items = this.$store.state.i18n.items
+      return items.map(o => {
+        return {
+          ios: o.key,
+          class: `flag-${o.translation.flag || o.key}`,
+          url: this.getUrl(o.key)
+        }
+      })
+    }
+  },
+  methods: {
+    getUrl (lang) {
+      let rpath = this.$route.path
+      let rootUrl = this.$store.state.urlRoot
+      if (rpath === '/') rpath = ''
+      if (lang === this.$store.state.i18n.key) {
+        return `${rootUrl}${rpath}`
+      }
+      return `${rootUrl}${lang}/${rpath}`
     }
   }
 }

@@ -35,6 +35,10 @@ export default {
         const vals = ['notes', 'tags', 'cates']
         return (vals.indexOf(val) > -1)
       }
+    },
+    urlRoot: {
+      type: String,
+      required: true
     }
   },
   methods: {
@@ -48,18 +52,6 @@ export default {
     },
     visible () {
       return (this.lastPage > 1)
-    },
-    urlRoot () {
-      const langKey = this.$store.state.i18n.curKey
-      const defaultKey = this.$store.state.i18n.key
-      let url = ''
-      let area = this.area
-      if (langKey === defaultKey) {
-        url = `/${area}/page`
-      } else {
-        url = `${langKey}/${area}/page`
-      }
-      return url
     }
   },
   components: {

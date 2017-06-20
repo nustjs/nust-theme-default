@@ -18,9 +18,9 @@ module.exports = {
       desc: 'A modern static site generator built on top of Nuxt.js and Vue.js',
       show_content: true,
       type: 'rss2',
-      default_posts: true
+      use_default_posts: true
     },
-    cn: {
+    'zh-CN': {
       title: 'Nust.js - Vue静态站点引擎',
       desc: 'Nust.js 是一个基于 Nuxt.js 和 Vue.js 的轻量级静态站点应用框架，可充当静态站点引擎生成静态站点应用，具有优雅的代码结构分层和热加载等特性。',
       show_content: true,

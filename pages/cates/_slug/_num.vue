@@ -1,57 +1,27 @@
 <template>
-  <div class="main-cates fixed-header sticky-footer">
-    <banner></banner>
-    <section class="sticky-footer-main">
-      <div class="grid grid-h">
-        <div class="aside">
-          <cate-nav></cate-nav>
-          <q-code></q-code>
-          <cases></cases>
-          <fav-link></fav-link>
-        </div>
-        <div class="col-size-flex">
-          <div class="posts clearfix" id="posts">
-            <template v-for="item in items">
-              <post-mini :post="item"></post-mini>
-            </template>
-          </div>
-          <infinite-loader :size="total"></infinite-loader>
-          <!--<pager :currentPage="page" :lastPage="total"></pager>-->
-        </div>
-      </div>
-    </section>
-    <app-footer/>
+  <div class="posts-wrap">
+    <div class="posts clearfix" id="posts">
+      <template v-for="item in items">
+        <post-mini :post="item"></post-mini>
+      </template>
+    </div>
+    <pager :currentPage="page" :lastPage="total" :urlRoot="pagerUrl"></pager>
   </div>
 </template>
 
 <script>
 import axios from '~plugins/axios'
 // common components
-import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
-import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
-// import Pager from '~components/pager/Pager.vue'
-// private components
-import Banner from '~components/home/Banner.vue'
-import CateNav from '~components/home/CateNav.vue'
-import QCode from '~components/home/QRCode.vue'
-import FavLink from '~components/home/FavLinks.vue'
-import Cases from '~components/home/Cases.vue'
+import Pager from '~components/pager/Pager.vue'
 
 export default {
   validate ({params, store}) {
     return store.utils.isAlphaNumDash(params.slug) && /^\d+$/.test(params.num)
   },
   components: {
-    AppFooter,
-    Banner,
-    CateNav,
     PostMini,
-    InfiniteLoader,
-    // Pager,
-    QCode,
-    FavLink,
-    Cases
+    Pager
   },
   async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
@@ -59,6 +29,11 @@ export default {
     let pageNum = params.num
     let res = await axios.get(`cate/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
+  },
+  computed: {
+    pagerUrl () {
+      return `cates/${this.slug}`
+    }
   },
   head () {
     return {

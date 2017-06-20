@@ -1,61 +1,37 @@
 <template>
-  <div class="main-tags fixed-header sticky-footer">
-    <banner></banner>
-    <section class="sticky-footer-main">
-      <div class="grid grid-h">
-        <div class="aside">
-          <q-code></q-code>
-          <cases></cases>
-          <fav-link></fav-link>
-        </div>
-        <div class="col-size-flex">
-          <tag-nav :items="tags" :tag="tag"></tag-nav>
-          <div class="posts clearfix" id="posts">
-            <template v-for="item in items">
-              <post-mini :post="item"></post-mini>
-            </template>
-          </div>
-          <infinite-loader :size="total"></infinite-loader>
-          <!--<pager :currentPage="page" :lastPage="total"></pager>-->
-        </div>
-      </div>
-    </section>
-    <app-footer/>
+  <div class="posts-wrap">
+    <tag-nav :items="tags" :tag="tag"></tag-nav>
+    <div class="posts clearfix" id="posts">
+      <template v-for="item in items">
+        <post-mini :post="item"></post-mini>
+      </template>
+    </div>
+    <infinite-loader :size="total" :url="url"></infinite-loader>
   </div>
 </template>
 
 <script>
 import axios from '~plugins/axios'
 // common components
-import AppFooter from '~components/Footer.vue'
 import PostMini from '~components/post/Mini.vue'
 import InfiniteLoader from '~components/pager/InfiniteLoader.vue'
-// import Pager from '~components/pager/Pager.vue'
-// private components
-import Banner from '~components/home/Banner.vue'
 import TagNav from '~components/tags/TagNav.vue'
-import QCode from '~components/home/QRCode.vue'
-import FavLink from '~components/home/FavLinks.vue'
-import Cases from '~components/home/Cases.vue'
 
 export default {
+
   validate ({params, store}) {
-    return store.utils.isAlphaNumDash(params.slug)
+    // it will throw 404 if return false
+    return store.utils.isAlphaNumDashUDCN(params.slug)
   },
   components: {
-    AppFooter,
-    Banner,
-    TagNav,
     PostMini,
     InfiniteLoader,
-    // Pager,
-    QCode,
-    FavLink,
-    Cases
+    TagNav
   },
   async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
-    let slug = params.slug
+    // must encode, or it will throws 'socket hang up' error for chinese chars.
+    let slug = encodeURI(params.slug)
     let pageNum = 1
     let res = await axios.get(`tag/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
@@ -63,6 +39,9 @@ export default {
   computed: {
     tag () {
       return {title: this.title, cnt: this.weight}
+    },
+    url () {
+      return `fragments/tag/${this.slug}/`
     }
   },
   head () {

@@ -15,7 +15,11 @@ export default {
     $route: 'setStore'
   },
   computed: {
-    visible () { return this.$store.state.visibleHeader }
+    visible () { return this.$store.state.visibleHeader },
+    langAttr () {
+      let key = this.$store.state.i18n.curKey
+      return key
+    }
   },
   methods: {
     setStore () {
@@ -26,7 +30,7 @@ export default {
   head () {
     let canonical = `${this.$store.state.urlRoot}${this.$route.path.substr(1)}`
     return {
-      htmlAttrs: { lang: this.$store.state.i18n.curKey },
+      htmlAttrs: { lang: this.langAttr },
       link: [
         { rel: 'canonical', href: canonical },
         { rel: 'alternate', hreflang: 'en', href: `${this.$store.state.urlRoot}en/${this.$route.path.substr(1).replace('en/', '')}` },

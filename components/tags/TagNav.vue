@@ -1,13 +1,14 @@
 <template>
 <div class="tagnav">
   <div class="tagnav-hd">
-    <button class="btn btn-primary btn-small btn-showtags" @click="toggleTags">
-      <span class="btn-inner">{{ $t('text.tag_show_all') }}</span>
+    <button class="btn btn-primary btn-small btn-showtags" @click="toggleTags" v-if="collapsable">
+      <span class="btn-inner">{{ $t('text.tag_all') }}</span>
     </button>
-    <div class="tagnav-tip" v-html="$t('text.tag_post_tip', tag)"></div>
+    <div class="tagnav-tip" v-html="$t('text.tag_post_tip', tag)" v-if="tag"></div>
+    <div class="tagnav-tip" v-html="$t('text.tag_count_tip', {total})" v-if="!tag"></div>
   </div>
   <transition name="tags" enter-active-class="animated fadeInDown" leave-active-class="animated foldUp">
-  <nav class="tags" v-if="showTags">
+  <nav class="tags" v-if="visibleTags">
     <ul class="tag-menu">
       <li class="tag-menu-item" v-for="item in items">
         <nuxt-link class="tag-menu-link" :to="item.route" :exact="item.exact">
@@ -30,20 +31,30 @@ export default {
     items: {
       type: Array,
       default: []
+    },
+    collapsable: {
+      type: Boolean,
+      default: true
     }
   },
   components: {
   },
+  data () {
+    return {
+      showTags: false
+    }
+  },
   computed: {
+    total () {
+      return this.items.length
+    },
+    visibleTags () {
+      return !this.collapsable || this.showTags
+    }
   },
   methods: {
     toggleTags () {
       this.showTags = !this.showTags
-    }
-  },
-  data () {
-    return {
-      showTags: false
     }
   }
 }

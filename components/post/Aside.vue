@@ -9,7 +9,7 @@
       <div class="affix-ct">
         <ul class="post-tags">
           <li v-for="item in tags" class="post-tag">
-            <a target="_blank" :href="item.route" :title="item.title" class="post-tag-link" :class="'post-tag-w' + item.weight"># {{ item.title }}</a>
+            <a :href="item.route" :title="item.title" class="post-tag-link" :class="'post-tag-w' + item.weight"># {{ item.title }}</a>
           </li>
         </ul>
       </div>

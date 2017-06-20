@@ -15,13 +15,14 @@ import PostMini from '~components/post/Mini.vue'
 export default {
   layout: 'fragment',
   validate ({params, store}) {
-    return store.utils.isAlphaNumDash(params.slug) && /^\d+$/.test(params.num)
+    return store.utils.isAlphaNumDash(params.type) && store.utils.isAlphaNumDash(params.slug) && /^\d+$/.test(params.num)
   },
   async asyncData ({store, params}) {
     let langKey = store.state.i18n.curKey
+    let type = params.type
     let pageNum = params.num
     let slug = params.slug
-    let res = await axios.get(`cate/posts/${langKey}/${slug}/${pageNum}`)
+    let res = await axios.get(`${type}/posts/${langKey}/${slug}/${pageNum}`)
     return res.data
   },
   components: {

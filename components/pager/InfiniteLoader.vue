@@ -14,6 +14,10 @@ export default {
       type: Number,
       required: true,
       default: 1
+    },
+    url: {
+      type: String,
+      default: 'notes/fragment/'
     }
   },
   data () {
@@ -29,7 +33,7 @@ export default {
   methods: {
     apiUrl (pageNum) {
       const rootUrl = this.$store.state.urlRoot
-      const url = `${rootUrl}notes/fragment/${pageNum}`
+      const url = `${rootUrl}${this.url}${pageNum}`
       return url
     },
     async onInfinite () {
