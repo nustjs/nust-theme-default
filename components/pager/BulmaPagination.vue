@@ -22,6 +22,7 @@ export default {
     urlBuilder: {
       type: Function,
       default (page) {
+        console.log(this.normalize(`${this.urlPrefix}/${page}`), 'page') //eslint-disable-line
         return this.normalize(`${this.urlPrefix}/${page}`)
       }
     },

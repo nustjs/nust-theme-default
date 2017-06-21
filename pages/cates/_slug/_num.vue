@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     pagerUrl () {
-      return `cates/${this.slug}`
+      return `/cates/${this.slug}`
     }
   },
   head () {

@@ -27,15 +27,6 @@ export default {
       type: String,
       default: ''
     },
-    area: {
-      // possible values are 'notes','tags',and 'cates'
-      type: String,
-      default: 'notes',
-      validator (val) {
-        const vals = ['notes', 'tags', 'cates']
-        return (vals.indexOf(val) > -1)
-      }
-    },
     urlRoot: {
       type: String,
       required: true

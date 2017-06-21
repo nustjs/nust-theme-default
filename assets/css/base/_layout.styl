@@ -78,10 +78,14 @@
   +fhd()
     width: $affix-width-fhd
   &-sec
+    position: relative
     width: 100%
     margin-bottom: $fgs-gutter
     padding: $fgs-aside-pl
     background-color: #fff
+    height: 63px
+    overflow: hidden
+    transition: all .25s ease
     +tablet()
       width: $affix-width-tablet
       padding: $fgs-section-mb
@@ -94,6 +98,18 @@
       width: $affix-width-hd
     +fhd()
       width: $affix-width-fhd
+    > .collapser
+      position: absolute
+      top: 23px
+      right: 25px
+      display: block
+    &.is-expanded
+      height: auto
+      .collapser
+        display: none
+    &:hover
+      .collapser
+        display: block
   &-title
     margin: 0 0 10px
     text-transform: uppercase

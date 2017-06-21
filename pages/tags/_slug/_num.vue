@@ -35,7 +35,7 @@ export default {
   },
   computed: {
     pagerUrl () {
-      return `tags/${this.slug}`
+      return `/tags/${this.slug}`
     }
   },
   head () {

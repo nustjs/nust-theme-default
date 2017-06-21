@@ -21,6 +21,10 @@ const Dom = {
       return ids.indexOf(o.id) > -1
     })
     return el
+  },
+  hasOutsideWindow (el) {
+    let dim = el.getBoundingClientRect()
+    return window.innerHeight < Math.ceil(dim.bottom)
   }
 }
 

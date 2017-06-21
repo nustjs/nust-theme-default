@@ -90,8 +90,8 @@
         bottom: -3px
         filter: blur(12px)
 
-// special delete button
-.delete
+// special buttons
+sbtn()
   -webkit-touch-callout: none
   -webkit-user-select: none
   -moz-user-select: none
@@ -126,8 +126,6 @@
     left: 50%
     position: absolute
     top: 50%
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
-    transform: translateX(-50%) translateY(-50%) rotate(45deg)
     -webkit-transform-origin: center center
     transform-origin: center center
   &:before 
@@ -149,3 +147,18 @@
   &.is-large
     height: 32px
     width: 32px
+
+.delete
+  sbtn()
+  &:before, &:after
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg)
+    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+
+.collapser
+  sbtn()
+  &:before, &:after
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg)
+    transform: translateX(-50%) translateY(-50%) rotate(90deg)
+  .is-expanded &
+    &:before
+      display: none

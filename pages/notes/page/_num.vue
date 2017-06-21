@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     pagerUrl () {
-      return `notes/page`
+      return `/notes/page`
     }
   },
   async asyncData ({store, params}) {
