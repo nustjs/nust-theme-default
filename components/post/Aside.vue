@@ -10,7 +10,7 @@
       <h3 class="affix-title">{{ $t('text.postTags') }}</h3>
       <div class="affix-ct">
         <ul class="post-tags">
-          <li v-for="item in tags" class="post-tag">
+          <li v-for="item in tags" class="post-tag" :key="item.route">
             <a :href="item.route" :title="item.title" class="post-tag-link" :class="'post-tag-w' + item.weight"># {{ item.title }}</a>
           </li>
         </ul>
@@ -20,7 +20,7 @@
       <button class="collapser" @click="collapse"></button>
       <h3 class="affix-title">{{ $t('text.weeklyrss') }}</h3>
       <div class="affix-ct">
-        <img class="aotuwx-qrcode" src="//aotu.io/img/qrcode.jpg" :alt="$t('text.weeklyrss')" />
+        <img class="aotuwx-qrcode" src="//aotu.io/img/qrcode.jpg" :alt="$t('text.weeklyrss')" >
       </div>
     </div>
   </affix>

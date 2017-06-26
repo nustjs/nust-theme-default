@@ -4,8 +4,8 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nust.js - A modern static site engine</title>
-    <link>http://localhost:8088/</link>
-    <atom:link href="http://localhost:8088/rss2-en.xml" rel="self" type="application/rss+xml"/>
+    <link>https://aotu.io</link>
+    <atom:link href="https://aotu.io/rss2-en.xml" rel="self" type="application/rss+xml"/>
     
     <description>A modern static site generator built on top of Nuxt.js and Vue.js</description>
     <pubDate>2017-05-25T09:11:19.000Z</pubDate>
@@ -13,8 +13,8 @@
     
     <item>
       <title>一个栗子实践vue2.0与1.0的区别</title>
-      <link>http://localhost:8088//notes/2016-12-29/vue-clock</link>
-      <guid>http://localhost:8088//notes/2016-12-29/vue-clock</guid>
+      <link>https://aotu.io/notes/2016-12-29/vue-clock</link>
+      <guid>https://aotu.io/notes/2016-12-29/vue-clock</guid>
       <pubDate>2016-12-28T17:35:12.000Z</pubDate>
       <description>
       
@@ -474,8 +474,8 @@ Vue.use(Vuex)
     
     <item>
       <title>京东2016版首页改版前端总结</title>
-      <link>http://localhost:8088//notes/2016-12-27/jd-index-2016-summary</link>
-      <guid>http://localhost:8088//notes/2016-12-27/jd-index-2016-summary</guid>
+      <link>https://aotu.io/notes/2016-12-27/jd-index-2016-summary</link>
+      <guid>https://aotu.io/notes/2016-12-27/jd-index-2016-summary</guid>
       <pubDate>2016-12-26T20:25:57.000Z</pubDate>
       <description>
       
@@ -623,8 +623,8 @@ ajax({
     
     <item>
       <title>vim给代码行尾加分号的几种方法</title>
-      <link>http://localhost:8088//notes/2016-12-08/vim-4</link>
-      <guid>http://localhost:8088//notes/2016-12-08/vim-4</guid>
+      <link>https://aotu.io/notes/2016-12-08/vim-4</link>
+      <guid>https://aotu.io/notes/2016-12-08/vim-4</guid>
       <pubDate>2016-12-08T10:25:35.000Z</pubDate>
       <description>
       
@@ -641,8 +641,8 @@ ajax({
     
     <item>
       <title>正则表达式实践篇</title>
-      <link>http://localhost:8088//notes/2016-12-07/regexp-practice</link>
-      <guid>http://localhost:8088//notes/2016-12-07/regexp-practice</guid>
+      <link>https://aotu.io/notes/2016-12-07/regexp-practice</link>
+      <guid>https://aotu.io/notes/2016-12-07/regexp-practice</guid>
       <pubDate>2016-12-07T10:34:01.000Z</pubDate>
       <description>
       
@@ -695,8 +695,8 @@ ajax({
     
     <item>
       <title>源码赏析 - 1K的Firewatch游戏</title>
-      <link>http://localhost:8088//notes/2016-12-04/firewatcher-appreciation</link>
-      <guid>http://localhost:8088//notes/2016-12-04/firewatcher-appreciation</guid>
+      <link>https://aotu.io/notes/2016-12-04/firewatcher-appreciation</link>
+      <guid>https://aotu.io/notes/2016-12-04/firewatcher-appreciation</guid>
       <pubDate>2016-12-04T15:33:00.000Z</pubDate>
       <description>
       
@@ -849,8 +849,8 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     <item>
       <title>项目心得 -- 京东云改版</title>
-      <link>http://localhost:8088//notes/2016-12-03/jcloud</link>
-      <guid>http://localhost:8088//notes/2016-12-03/jcloud</guid>
+      <link>https://aotu.io/notes/2016-12-03/jcloud</link>
+      <guid>https://aotu.io/notes/2016-12-03/jcloud</guid>
       <pubDate>2016-12-02T16:26:14.000Z</pubDate>
       <description>
       
@@ -865,8 +865,8 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     <item>
       <title>css3 animation 属性众妙</title>
-      <link>http://localhost:8088//notes/2016-11-28/css3-animation-properties</link>
-      <guid>http://localhost:8088//notes/2016-11-28/css3-animation-properties</guid>
+      <link>https://aotu.io/notes/2016-11-28/css3-animation-properties</link>
+      <guid>https://aotu.io/notes/2016-11-28/css3-animation-properties</guid>
       <pubDate>2016-11-28T10:00:00.000Z</pubDate>
       <description>
       
@@ -958,8 +958,8 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     <item>
       <title>FIGlet初识</title>
-      <link>http://localhost:8088//notes/2016-11-23/figlet</link>
-      <guid>http://localhost:8088//notes/2016-11-23/figlet</guid>
+      <link>https://aotu.io/notes/2016-11-23/figlet</link>
+      <guid>https://aotu.io/notes/2016-11-23/figlet</guid>
       <pubDate>2016-11-22T17:33:00.000Z</pubDate>
       <description>
       
@@ -1005,8 +1005,8 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     <item>
       <title>三看 SVG Web 动效</title>
-      <link>http://localhost:8088//notes/2016-11-23/SVG_Web_Animation</link>
-      <guid>http://localhost:8088//notes/2016-11-23/SVG_Web_Animation</guid>
+      <link>https://aotu.io/notes/2016-11-23/SVG_Web_Animation</link>
+      <guid>https://aotu.io/notes/2016-11-23/SVG_Web_Animation</guid>
       <pubDate>2016-11-22T17:33:00.000Z</pubDate>
       <description>
       
@@ -1152,8 +1152,8 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     <item>
       <title>「塔罗牌」 - 轻氧 V1.4 尝鲜体验邀请</title>
-      <link>http://localhost:8088//notes/2016-11-21/liteo2-app-tarots</link>
-      <guid>http://localhost:8088//notes/2016-11-21/liteo2-app-tarots</guid>
+      <link>https://aotu.io/notes/2016-11-21/liteo2-app-tarots</link>
+      <guid>https://aotu.io/notes/2016-11-21/liteo2-app-tarots</guid>
       <pubDate>2016-11-21T13:21:43.000Z</pubDate>
       <description>
       
@@ -1168,8 +1168,8 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     <item>
       <title>正则表达式理论篇</title>
-      <link>http://localhost:8088//notes/2016-11-17/regexp-theory</link>
-      <guid>http://localhost:8088//notes/2016-11-17/regexp-theory</guid>
+      <link>https://aotu.io/notes/2016-11-17/regexp-theory</link>
+      <guid>https://aotu.io/notes/2016-11-17/regexp-theory</guid>
       <pubDate>2016-11-17T09:29:38.000Z</pubDate>
       <description>
       
@@ -1219,8 +1219,8 @@ console.<span class=hljs-built_in>log</span>(str.<span class=hljs-keyword>replac
     
     <item>
       <title>XCel 项目总结 - Electron 与 Vue 的性能优化</title>
-      <link>http://localhost:8088//notes/2016-11-16/xcel</link>
-      <guid>http://localhost:8088//notes/2016-11-16/xcel</guid>
+      <link>https://aotu.io/notes/2016-11-16/xcel</link>
+      <guid>https://aotu.io/notes/2016-11-16/xcel</guid>
       <pubDate>2016-11-15T23:23:23.000Z</pubDate>
       <description>
       
@@ -1357,8 +1357,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>漫漫编程路上必读的7本书</title>
-      <link>http://localhost:8088//notes/2016-11-15/booklist-for-every-programmer</link>
-      <guid>http://localhost:8088//notes/2016-11-15/booklist-for-every-programmer</guid>
+      <link>https://aotu.io/notes/2016-11-15/booklist-for-every-programmer</link>
+      <guid>https://aotu.io/notes/2016-11-15/booklist-for-every-programmer</guid>
       <pubDate>2016-11-14T16:21:43.000Z</pubDate>
       <description>
       
@@ -1373,8 +1373,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>Webpack 实用配置技巧</title>
-      <link>http://localhost:8088//notes/2016-11-15/webpack-tips</link>
-      <guid>http://localhost:8088//notes/2016-11-15/webpack-tips</guid>
+      <link>https://aotu.io/notes/2016-11-15/webpack-tips</link>
+      <guid>https://aotu.io/notes/2016-11-15/webpack-tips</guid>
       <pubDate>2016-11-14T16:16:31.000Z</pubDate>
       <description>
       
@@ -1558,8 +1558,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>WeUI for 小程序 - 为微信小程序量身设计</title>
-      <link>http://localhost:8088//notes/2016-11-11/weui-wxss</link>
-      <guid>http://localhost:8088//notes/2016-11-11/weui-wxss</guid>
+      <link>https://aotu.io/notes/2016-11-11/weui-wxss</link>
+      <guid>https://aotu.io/notes/2016-11-11/weui-wxss</guid>
       <pubDate>2016-11-10T17:21:43.000Z</pubDate>
       <description>
       
@@ -1574,8 +1574,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>轻氧 - 2016年末最新款互联网专业资讯 APP</title>
-      <link>http://localhost:8088//notes/2016-11-09/liteo2-app</link>
-      <guid>http://localhost:8088//notes/2016-11-09/liteo2-app</guid>
+      <link>https://aotu.io/notes/2016-11-09/liteo2-app</link>
+      <guid>https://aotu.io/notes/2016-11-09/liteo2-app</guid>
       <pubDate>2016-11-09T14:21:43.000Z</pubDate>
       <description>
       
@@ -1590,8 +1590,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>深入了解font-weight</title>
-      <link>http://localhost:8088//notes/2016-11-09/css3fontweight</link>
-      <guid>http://localhost:8088//notes/2016-11-09/css3fontweight</guid>
+      <link>https://aotu.io/notes/2016-11-09/css3fontweight</link>
+      <guid>https://aotu.io/notes/2016-11-09/css3fontweight</guid>
       <pubDate>2016-11-08T16:34:58.000Z</pubDate>
       <description>
       
@@ -1606,8 +1606,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>我的第一次移动端页面制作 — 总结与思考</title>
-      <link>http://localhost:8088//notes/2016-11-09/first-mobile-rebuild</link>
-      <guid>http://localhost:8088//notes/2016-11-09/first-mobile-rebuild</guid>
+      <link>https://aotu.io/notes/2016-11-09/first-mobile-rebuild</link>
+      <guid>https://aotu.io/notes/2016-11-09/first-mobile-rebuild</guid>
       <pubDate>2016-11-08T16:22:23.000Z</pubDate>
       <description>
       
@@ -1779,8 +1779,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>APNG 那些事</title>
-      <link>http://localhost:8088//notes/2016-11-08/apng</link>
-      <guid>http://localhost:8088//notes/2016-11-08/apng</guid>
+      <link>https://aotu.io/notes/2016-11-08/apng</link>
+      <guid>https://aotu.io/notes/2016-11-08/apng</guid>
       <pubDate>2016-11-07T17:48:31.000Z</pubDate>
       <description>
       
@@ -1809,8 +1809,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>border-image 的正确用法</title>
-      <link>http://localhost:8088//notes/2016-11-03/border-image</link>
-      <guid>http://localhost:8088//notes/2016-11-03/border-image</guid>
+      <link>https://aotu.io/notes/2016-11-03/border-image</link>
+      <guid>https://aotu.io/notes/2016-11-03/border-image</guid>
       <pubDate>2016-11-02T21:22:23.000Z</pubDate>
       <description>
       
@@ -1858,8 +1858,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>AdobeMax 2016回顾</title>
-      <link>http://localhost:8088//notes/2016-11-03/AdobeMax2016</link>
-      <guid>http://localhost:8088//notes/2016-11-03/AdobeMax2016</guid>
+      <link>https://aotu.io/notes/2016-11-03/AdobeMax2016</link>
+      <guid>https://aotu.io/notes/2016-11-03/AdobeMax2016</guid>
       <pubDate>2016-11-02T21:22:23.000Z</pubDate>
       <description>
       
@@ -1874,8 +1874,8 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     <item>
       <title>Javascript 中的装饰器</title>
-      <link>http://localhost:8088//notes/2016-10-25/decorator</link>
-      <guid>http://localhost:8088//notes/2016-10-25/decorator</guid>
+      <link>https://aotu.io/notes/2016-10-25/decorator</link>
+      <guid>https://aotu.io/notes/2016-10-25/decorator</guid>
       <pubDate>2016-10-24T20:49:11.000Z</pubDate>
       <description>
       
@@ -1990,8 +1990,8 @@ bunny.run();
     
     <item>
       <title>CSS3 Mask 安利报告</title>
-      <link>http://localhost:8088//notes/2016-10-20/css3-mask</link>
-      <guid>http://localhost:8088//notes/2016-10-20/css3-mask</guid>
+      <link>https://aotu.io/notes/2016-10-20/css3-mask</link>
+      <guid>https://aotu.io/notes/2016-10-20/css3-mask</guid>
       <pubDate>2016-10-19T18:48:16.000Z</pubDate>
       <description>
       
@@ -2176,8 +2176,8 @@ mask-size: <span class=hljs-string>[mask-size]</span>;</code></pre><h2 id=2-图�
     
     <item>
       <title>Vue2.0 新手完全填坑攻略——从环境搭建到展示豆瓣的电影列表</title>
-      <link>http://localhost:8088//notes/2016-10-13/vue2</link>
-      <guid>http://localhost:8088//notes/2016-10-13/vue2</guid>
+      <link>https://aotu.io/notes/2016-10-13/vue2</link>
+      <guid>https://aotu.io/notes/2016-10-13/vue2</guid>
       <pubDate>2016-10-13T10:31:35.000Z</pubDate>
       <description>
       
@@ -2437,8 +2437,8 @@ Vue.use(Element)</code></pre><p>保存，这时候程序报错<blockquote><p>Unc
     
     <item>
       <title>H5直播起航</title>
-      <link>http://localhost:8088//notes/2016-10-09/HTML5-SopCast</link>
-      <guid>http://localhost:8088//notes/2016-10-09/HTML5-SopCast</guid>
+      <link>https://aotu.io/notes/2016-10-09/HTML5-SopCast</link>
+      <guid>https://aotu.io/notes/2016-10-09/HTML5-SopCast</guid>
       <pubDate>2016-10-09T15:24:41.000Z</pubDate>
       <description>
       
@@ -2501,8 +2501,8 @@ ffmpeg -re -<span class=hljs-selector-tag>i</span> /Users/gao/Desktop/video/test
     
     <item>
       <title>凹凸实验室博客V1.0.0发布</title>
-      <link>http://localhost:8088//notes/2015-10-08/aotu-blog-v1</link>
-      <guid>http://localhost:8088//notes/2015-10-08/aotu-blog-v1</guid>
+      <link>https://aotu.io/notes/2015-10-08/aotu-blog-v1</link>
+      <guid>https://aotu.io/notes/2015-10-08/aotu-blog-v1</guid>
       <pubDate>2015-10-08T10:24:35.000Z</pubDate>
       <description>
       

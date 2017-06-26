@@ -2,6 +2,7 @@
  * custom nust configuration
  */
 module.exports = {
+  url: 'https://aotu.io',
   // gitment
   gitment: {
     owner: 'mamboer',
@@ -25,6 +26,16 @@ module.exports = {
       desc: 'Nust.js 是一个基于 Nuxt.js 和 Vue.js 的轻量级静态站点应用框架，可充当静态站点引擎生成静态站点应用，具有优雅的代码结构分层和热加载等特性。',
       show_content: true,
       type: 'atom'
+    }
+  },
+  // sitemap
+  sitemap: {
+    en: {
+      type: 'sitemap',
+      use_default_posts: true
+    },
+    'zh-CN': {
+      type: 'sitemap-baidu'
     }
   }
 }

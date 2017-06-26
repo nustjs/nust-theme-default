@@ -1,5 +1,5 @@
 <template>
-  <infinite-loading :on-infinite="onInfinite" ref="infiniteLoading" v-if="hasNext">
+  <infinite-loading :on-infinite="onInfinite" ref="infiniteLoading">
     <span slot="no-more">{{ $t('text.noMorePage') }}</span>
   </infinite-loading>
 </template>
@@ -22,7 +22,8 @@ export default {
   },
   data () {
     return {
-      current: 1
+      current: 1,
+      timer: null
     }
   },
   computed: {
@@ -37,6 +38,7 @@ export default {
       return url
     },
     async onInfinite () {
+      clearTimeout(this.timer)
       if (this.current === this.size) {
         this.$refs.infiniteLoading.$emit('$InfiniteLoading:complete')
         this.$refs.infiniteLoading.$destroy()
@@ -45,9 +47,11 @@ export default {
       this.current ++
       let url = this.apiUrl(this.current)
       let res = await axios.get(url)
-      this.$refs.infiniteLoading.$emit('$InfiniteLoading:complete')
-      this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded')
-      document.querySelector('#posts').innerHTML += res.data
+      this.timer = setTimeout(() => {
+        this.$refs.infiniteLoading.$emit('$InfiniteLoading:complete')
+        this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded')
+        document.querySelector('#posts').innerHTML += res.data
+      }, 1000)
     }
   },
   components: {

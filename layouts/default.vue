@@ -4,11 +4,13 @@
     <div class="main" :class="{'App--hidden': visible}">
       <nuxt/>
     </div>
+    <backtop></backtop>
   </div>
 </template>
 
 <script>
 import Navbar from '~components/Header.vue'
+import Backtop from '~components/common/Backtop.vue'
 
 export default {
   watch: {
@@ -39,7 +41,8 @@ export default {
     }
   },
   components: {
-    Navbar
+    Navbar,
+    Backtop
   }
 }
 </script>

@@ -28,6 +28,7 @@
     "gitment": "0.0.3",
     "nust-generator-fuse": "latest",
     "nust-generator-feed": "latest",
+    "nust-generator-sitemap": "latest",
     "vue-infinite-loading": "^2.1.3"
   },
   "devDependencies": {

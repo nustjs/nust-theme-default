@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Nust.js - Vue静态站点引擎</title>
   <subtitle>Nust.js 是一个基于 Nuxt.js 和 Vue.js 的轻量级静态站点应用框架，可充当静态站点引擎生成静态站点应用，具有优雅的代码结构分层和热加载等特性。</subtitle>
-  <link href="http://localhost:8088/atom.xml" rel="self"/>
+  <link href="https://aotu.io/atom.xml" rel="self"/>
   
-  <link href="http://localhost:8088/"/>
+  <link href="https://aotu.io"/>
   <updated>2017-05-25T09:11:19.000Z</updated>
-  <id>http://localhost:8088/</id>
+  <id>https://aotu.io</id>
   
   <author>
     <name>mamboer</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>一个栗子实践vue2.0与1.0的区别</title>
-    <link href="http://localhost:8088//notes/2016-12-29/vue-clock"/>
-    <id>http://localhost:8088//notes/2016-12-29/vue-clock</id>
+    <link href="https://aotu.io/notes/2016-12-29/vue-clock"/>
+    <id>https://aotu.io/notes/2016-12-29/vue-clock</id>
     <published>2016-12-28T17:35:12.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -475,23 +475,23 @@ Vue.use(Vuex)
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="vue" scheme="http://localhost:8088//tags/vue"/>
+      <category term="vue" scheme="https://aotu.io/tags/vue"/>
     
-      <category term="vue2.0" scheme="http://localhost:8088//tags/vue2-0"/>
+      <category term="vue2.0" scheme="https://aotu.io/tags/vue2-0"/>
     
-      <category term="vue2.0与1.0的区别" scheme="http://localhost:8088//tags/vue2-0%E4%B8%8E1-0%E7%9A%84%E5%8C%BA%E5%88%AB"/>
+      <category term="vue2.0与1.0的区别" scheme="https://aotu.io/tags/vue2-0%25E4%25B8%258E1-0%25E7%259A%2584%25E5%258C%25BA%25E5%2588%25AB"/>
     
-      <category term="栗子" scheme="http://localhost:8088//tags/%E6%A0%97%E5%AD%90"/>
+      <category term="栗子" scheme="https://aotu.io/tags/%25E6%25A0%2597%25E5%25AD%2590"/>
     
   </entry>
   
   <entry>
     <title>京东2016版首页改版前端总结</title>
-    <link href="http://localhost:8088//notes/2016-12-27/jd-index-2016-summary"/>
-    <id>http://localhost:8088//notes/2016-12-27/jd-index-2016-summary</id>
+    <link href="https://aotu.io/notes/2016-12-27/jd-index-2016-summary"/>
+    <id>https://aotu.io/notes/2016-12-27/jd-index-2016-summary</id>
     <published>2016-12-26T20:25:57.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -636,19 +636,19 @@ ajax({
     
     </summary>
     
-      <category term="项目总结" scheme="http://localhost:8088//cates/projreview"/>
+      <category term="项目总结" scheme="https://aotu.io/cates/projreview"/>
     
     
-      <category term="JD" scheme="http://localhost:8088//tags/jd"/>
+      <category term="JD" scheme="https://aotu.io/tags/jd"/>
     
-      <category term="Summary" scheme="http://localhost:8088//tags/summary"/>
+      <category term="Summary" scheme="https://aotu.io/tags/summary"/>
     
   </entry>
   
   <entry>
     <title>vim给代码行尾加分号的几种方法</title>
-    <link href="http://localhost:8088//notes/2016-12-08/vim-4"/>
-    <id>http://localhost:8088//notes/2016-12-08/vim-4</id>
+    <link href="https://aotu.io/notes/2016-12-08/vim-4"/>
+    <id>https://aotu.io/notes/2016-12-08/vim-4</id>
     <published>2016-12-08T10:25:35.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -662,21 +662,21 @@ ajax({
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="vim" scheme="http://localhost:8088//tags/vim"/>
+      <category term="vim" scheme="https://aotu.io/tags/vim"/>
     
-      <category term="工具" scheme="http://localhost:8088//tags/%E5%B7%A5%E5%85%B7"/>
+      <category term="工具" scheme="https://aotu.io/tags/%25E5%25B7%25A5%25E5%2585%25B7"/>
     
-      <category term="Web开发" scheme="http://localhost:8088//tags/web%E5%BC%80%E5%8F%91"/>
+      <category term="Web开发" scheme="https://aotu.io/tags/web%25E5%25BC%2580%25E5%258F%2591"/>
     
   </entry>
   
   <entry>
     <title>正则表达式实践篇</title>
-    <link href="http://localhost:8088//notes/2016-12-07/regexp-practice"/>
-    <id>http://localhost:8088//notes/2016-12-07/regexp-practice</id>
+    <link href="https://aotu.io/notes/2016-12-07/regexp-practice"/>
+    <id>https://aotu.io/notes/2016-12-07/regexp-practice</id>
     <published>2016-12-07T10:34:01.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -726,33 +726,33 @@ ajax({
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="正则表达式" scheme="http://localhost:8088//tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"/>
+      <category term="正则表达式" scheme="https://aotu.io/tags/%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F"/>
     
-      <category term="regexp" scheme="http://localhost:8088//tags/regexp"/>
+      <category term="regexp" scheme="https://aotu.io/tags/regexp"/>
     
-      <category term="javascript" scheme="http://localhost:8088//tags/javascript"/>
+      <category term="javascript" scheme="https://aotu.io/tags/javascript"/>
     
-      <category term="匹配美元" scheme="http://localhost:8088//tags/%E5%8C%B9%E9%85%8D%E7%BE%8E%E5%85%83"/>
+      <category term="匹配美元" scheme="https://aotu.io/tags/%25E5%258C%25B9%25E9%2585%258D%25E7%25BE%258E%25E5%2585%2583"/>
     
-      <category term="匹配24小时制的时间" scheme="http://localhost:8088//tags/%E5%8C%B9%E9%85%8D24%E5%B0%8F%E6%97%B6%E5%88%B6%E7%9A%84%E6%97%B6%E9%97%B4"/>
+      <category term="匹配24小时制的时间" scheme="https://aotu.io/tags/%25E5%258C%25B9%25E9%2585%258D24%25E5%25B0%258F%25E6%2597%25B6%25E5%2588%25B6%25E7%259A%2584%25E6%2597%25B6%25E9%2597%25B4"/>
     
-      <category term="匹配IP地址" scheme="http://localhost:8088//tags/%E5%8C%B9%E9%85%8Dip%E5%9C%B0%E5%9D%80"/>
+      <category term="匹配IP地址" scheme="https://aotu.io/tags/%25E5%258C%25B9%25E9%2585%258Dip%25E5%259C%25B0%25E5%259D%2580"/>
     
-      <category term="匹配分隔符之内的文本" scheme="http://localhost:8088//tags/%E5%8C%B9%E9%85%8D%E5%88%86%E9%9A%94%E7%AC%A6%E4%B9%8B%E5%86%85%E7%9A%84%E6%96%87%E6%9C%AC"/>
+      <category term="匹配分隔符之内的文本" scheme="https://aotu.io/tags/%25E5%258C%25B9%25E9%2585%258D%25E5%2588%2586%25E9%259A%2594%25E7%25AC%25A6%25E4%25B9%258B%25E5%2586%2585%25E7%259A%2584%25E6%2596%2587%25E6%259C%25AC"/>
     
-      <category term="多选分支" scheme="http://localhost:8088//tags/%E5%A4%9A%E9%80%89%E5%88%86%E6%94%AF"/>
+      <category term="多选分支" scheme="https://aotu.io/tags/%25E5%25A4%259A%25E9%2580%2589%25E5%2588%2586%25E6%2594%25AF"/>
     
-      <category term="回溯" scheme="http://localhost:8088//tags/%E5%9B%9E%E6%BA%AF"/>
+      <category term="回溯" scheme="https://aotu.io/tags/%25E5%259B%259E%25E6%25BA%25AF"/>
     
   </entry>
   
   <entry>
     <title>源码赏析 - 1K的Firewatch游戏</title>
-    <link href="http://localhost:8088//notes/2016-12-04/firewatcher-appreciation"/>
-    <id>http://localhost:8088//notes/2016-12-04/firewatcher-appreciation</id>
+    <link href="https://aotu.io/notes/2016-12-04/firewatcher-appreciation"/>
+    <id>https://aotu.io/notes/2016-12-04/firewatcher-appreciation</id>
     <published>2016-12-04T15:33:00.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -902,17 +902,17 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="js1k 游戏 3D" scheme="http://localhost:8088//tags/js1k-%E6%B8%B8%E6%88%8F-3d"/>
+      <category term="js1k 游戏 3D" scheme="https://aotu.io/tags/js1k-%25E6%25B8%25B8%25E6%2588%258F-3d"/>
     
   </entry>
   
   <entry>
     <title>项目心得 -- 京东云改版</title>
-    <link href="http://localhost:8088//notes/2016-12-03/jcloud"/>
-    <id>http://localhost:8088//notes/2016-12-03/jcloud</id>
+    <link href="https://aotu.io/notes/2016-12-03/jcloud"/>
+    <id>https://aotu.io/notes/2016-12-03/jcloud</id>
     <published>2016-12-02T16:26:14.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -924,17 +924,17 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     </summary>
     
-      <category term="项目总结" scheme="http://localhost:8088//cates/projreview"/>
+      <category term="项目总结" scheme="https://aotu.io/cates/projreview"/>
     
     
-      <category term="项目总结" scheme="http://localhost:8088//tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93"/>
+      <category term="项目总结" scheme="https://aotu.io/tags/%25E9%25A1%25B9%25E7%259B%25AE%25E6%2580%25BB%25E7%25BB%2593"/>
     
   </entry>
   
   <entry>
     <title>css3 animation 属性众妙</title>
-    <link href="http://localhost:8088//notes/2016-11-28/css3-animation-properties"/>
-    <id>http://localhost:8088//notes/2016-11-28/css3-animation-properties</id>
+    <link href="https://aotu.io/notes/2016-11-28/css3-animation-properties"/>
+    <id>https://aotu.io/notes/2016-11-28/css3-animation-properties</id>
     <published>2016-11-28T10:00:00.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1023,17 +1023,17 @@ entities.sort(<span class=hljs-function><span class=hljs-keyword>function</span>
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="动画" scheme="http://localhost:8088//tags/%E5%8A%A8%E7%94%BB"/>
+      <category term="动画" scheme="https://aotu.io/tags/%25E5%258A%25A8%25E7%2594%25BB"/>
     
   </entry>
   
   <entry>
     <title>FIGlet初识</title>
-    <link href="http://localhost:8088//notes/2016-11-23/figlet"/>
-    <id>http://localhost:8088//notes/2016-11-23/figlet</id>
+    <link href="https://aotu.io/notes/2016-11-23/figlet"/>
+    <id>https://aotu.io/notes/2016-11-23/figlet</id>
     <published>2016-11-22T17:33:00.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1076,23 +1076,23 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="FIGlet" scheme="http://localhost:8088//tags/figlet"/>
+      <category term="FIGlet" scheme="https://aotu.io/tags/figlet"/>
     
-      <category term="ASCII Decorator" scheme="http://localhost:8088//tags/ascii-decorator"/>
+      <category term="ASCII Decorator" scheme="https://aotu.io/tags/ascii-decorator"/>
     
-      <category term="ASCII Art" scheme="http://localhost:8088//tags/ascii-art"/>
+      <category term="ASCII Art" scheme="https://aotu.io/tags/ascii-art"/>
     
-      <category term="字符图形" scheme="http://localhost:8088//tags/%E5%AD%97%E7%AC%A6%E5%9B%BE%E5%BD%A2"/>
+      <category term="字符图形" scheme="https://aotu.io/tags/%25E5%25AD%2597%25E7%25AC%25A6%25E5%259B%25BE%25E5%25BD%25A2"/>
     
   </entry>
   
   <entry>
     <title>三看 SVG Web 动效</title>
-    <link href="http://localhost:8088//notes/2016-11-23/SVG_Web_Animation"/>
-    <id>http://localhost:8088//notes/2016-11-23/SVG_Web_Animation</id>
+    <link href="https://aotu.io/notes/2016-11-23/SVG_Web_Animation"/>
+    <id>https://aotu.io/notes/2016-11-23/SVG_Web_Animation</id>
     <published>2016-11-22T17:33:00.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1235,19 +1235,19 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="SVG" scheme="http://localhost:8088//tags/svg"/>
+      <category term="SVG" scheme="https://aotu.io/tags/svg"/>
     
-      <category term="动效" scheme="http://localhost:8088//tags/%E5%8A%A8%E6%95%88"/>
+      <category term="动效" scheme="https://aotu.io/tags/%25E5%258A%25A8%25E6%2595%2588"/>
     
   </entry>
   
   <entry>
     <title>「塔罗牌」 - 轻氧 V1.4 尝鲜体验邀请</title>
-    <link href="http://localhost:8088//notes/2016-11-21/liteo2-app-tarots"/>
-    <id>http://localhost:8088//notes/2016-11-21/liteo2-app-tarots</id>
+    <link href="https://aotu.io/notes/2016-11-21/liteo2-app-tarots"/>
+    <id>https://aotu.io/notes/2016-11-21/liteo2-app-tarots</id>
     <published>2016-11-21T13:21:43.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1259,21 +1259,21 @@ figlet('JDC O2 Team', function(<span class=hljs-name>err</span>, data) {
     
     </summary>
     
-      <category term="移动开发" scheme="http://localhost:8088//cates/appdev"/>
+      <category term="移动开发" scheme="https://aotu.io/cates/appdev"/>
     
     
-      <category term="liteo2" scheme="http://localhost:8088//tags/liteo2"/>
+      <category term="liteo2" scheme="https://aotu.io/tags/liteo2"/>
     
-      <category term="app" scheme="http://localhost:8088//tags/app"/>
+      <category term="app" scheme="https://aotu.io/tags/app"/>
     
-      <category term="ios" scheme="http://localhost:8088//tags/ios"/>
+      <category term="ios" scheme="https://aotu.io/tags/ios"/>
     
   </entry>
   
   <entry>
     <title>正则表达式理论篇</title>
-    <link href="http://localhost:8088//notes/2016-11-17/regexp-theory"/>
-    <id>http://localhost:8088//notes/2016-11-17/regexp-theory</id>
+    <link href="https://aotu.io/notes/2016-11-17/regexp-theory"/>
+    <id>https://aotu.io/notes/2016-11-17/regexp-theory</id>
     <published>2016-11-17T09:29:38.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1320,27 +1320,27 @@ console.<span class=hljs-built_in>log</span>(str.<span class=hljs-keyword>replac
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="正则表达式" scheme="http://localhost:8088//tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"/>
+      <category term="正则表达式" scheme="https://aotu.io/tags/%25E6%25AD%25A3%25E5%2588%2599%25E8%25A1%25A8%25E8%25BE%25BE%25E5%25BC%258F"/>
     
-      <category term="regexp" scheme="http://localhost:8088//tags/regexp"/>
+      <category term="regexp" scheme="https://aotu.io/tags/regexp"/>
     
-      <category term="javascript" scheme="http://localhost:8088//tags/javascript"/>
+      <category term="javascript" scheme="https://aotu.io/tags/javascript"/>
     
-      <category term="String方法" scheme="http://localhost:8088//tags/string%E6%96%B9%E6%B3%95"/>
+      <category term="String方法" scheme="https://aotu.io/tags/string%25E6%2596%25B9%25E6%25B3%2595"/>
     
-      <category term="RegExp方法" scheme="http://localhost:8088//tags/regexp%E6%96%B9%E6%B3%95"/>
+      <category term="RegExp方法" scheme="https://aotu.io/tags/regexp%25E6%2596%25B9%25E6%25B3%2595"/>
     
-      <category term="回溯" scheme="http://localhost:8088//tags/%E5%9B%9E%E6%BA%AF"/>
+      <category term="回溯" scheme="https://aotu.io/tags/%25E5%259B%259E%25E6%25BA%25AF"/>
     
   </entry>
   
   <entry>
     <title>XCel 项目总结 - Electron 与 Vue 的性能优化</title>
-    <link href="http://localhost:8088//notes/2016-11-16/xcel"/>
-    <id>http://localhost:8088//notes/2016-11-16/xcel</id>
+    <link href="https://aotu.io/notes/2016-11-16/xcel"/>
+    <id>https://aotu.io/notes/2016-11-16/xcel</id>
     <published>2016-11-15T23:23:23.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1474,27 +1474,27 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="项目总结" scheme="http://localhost:8088//cates/projreview"/>
+      <category term="项目总结" scheme="https://aotu.io/cates/projreview"/>
     
     
-      <category term="excel" scheme="http://localhost:8088//tags/excel"/>
+      <category term="excel" scheme="https://aotu.io/tags/excel"/>
     
-      <category term="data-clening" scheme="http://localhost:8088//tags/data-clening"/>
+      <category term="data-clening" scheme="https://aotu.io/tags/data-clening"/>
     
-      <category term="electron" scheme="http://localhost:8088//tags/electron"/>
+      <category term="electron" scheme="https://aotu.io/tags/electron"/>
     
-      <category term="node" scheme="http://localhost:8088//tags/node"/>
+      <category term="node" scheme="https://aotu.io/tags/node"/>
     
-      <category term="js-xlsx" scheme="http://localhost:8088//tags/js-xlsx"/>
+      <category term="js-xlsx" scheme="https://aotu.io/tags/js-xlsx"/>
     
-      <category term="vue" scheme="http://localhost:8088//tags/vue"/>
+      <category term="vue" scheme="https://aotu.io/tags/vue"/>
     
   </entry>
   
   <entry>
     <title>漫漫编程路上必读的7本书</title>
-    <link href="http://localhost:8088//notes/2016-11-15/booklist-for-every-programmer"/>
-    <id>http://localhost:8088//notes/2016-11-15/booklist-for-every-programmer</id>
+    <link href="https://aotu.io/notes/2016-11-15/booklist-for-every-programmer"/>
+    <id>https://aotu.io/notes/2016-11-15/booklist-for-every-programmer</id>
     <published>2016-11-14T16:21:43.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1506,19 +1506,19 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="资源合集" scheme="http://localhost:8088//cates/resource"/>
+      <category term="资源合集" scheme="https://aotu.io/cates/resource"/>
     
     
-      <category term="读书清单" scheme="http://localhost:8088//tags/%E8%AF%BB%E4%B9%A6%E6%B8%85%E5%8D%95"/>
+      <category term="读书清单" scheme="https://aotu.io/tags/%25E8%25AF%25BB%25E4%25B9%25A6%25E6%25B8%2585%25E5%258D%2595"/>
     
-      <category term="程序开发" scheme="http://localhost:8088//tags/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91"/>
+      <category term="程序开发" scheme="https://aotu.io/tags/%25E7%25A8%258B%25E5%25BA%258F%25E5%25BC%2580%25E5%258F%2591"/>
     
   </entry>
   
   <entry>
     <title>Webpack 实用配置技巧</title>
-    <link href="http://localhost:8088//notes/2016-11-15/webpack-tips"/>
-    <id>http://localhost:8088//notes/2016-11-15/webpack-tips</id>
+    <link href="https://aotu.io/notes/2016-11-15/webpack-tips"/>
+    <id>https://aotu.io/notes/2016-11-15/webpack-tips</id>
     <published>2016-11-14T16:16:31.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1699,21 +1699,21 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="Webpack" scheme="http://localhost:8088//tags/webpack"/>
+      <category term="Webpack" scheme="https://aotu.io/tags/webpack"/>
     
-      <category term="模块打包工具" scheme="http://localhost:8088//tags/%E6%A8%A1%E5%9D%97%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7"/>
+      <category term="模块打包工具" scheme="https://aotu.io/tags/%25E6%25A8%25A1%25E5%259D%2597%25E6%2589%2593%25E5%258C%2585%25E5%25B7%25A5%25E5%2585%25B7"/>
     
-      <category term="Webpack 配置技巧" scheme="http://localhost:8088//tags/webpack-%E9%85%8D%E7%BD%AE%E6%8A%80%E5%B7%A7"/>
+      <category term="Webpack 配置技巧" scheme="https://aotu.io/tags/webpack-%25E9%2585%258D%25E7%25BD%25AE%25E6%258A%2580%25E5%25B7%25A7"/>
     
   </entry>
   
   <entry>
     <title>WeUI for 小程序 - 为微信小程序量身设计</title>
-    <link href="http://localhost:8088//notes/2016-11-11/weui-wxss"/>
-    <id>http://localhost:8088//notes/2016-11-11/weui-wxss</id>
+    <link href="https://aotu.io/notes/2016-11-11/weui-wxss"/>
+    <id>https://aotu.io/notes/2016-11-11/weui-wxss</id>
     <published>2016-11-10T17:21:43.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1725,21 +1725,21 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="weui" scheme="http://localhost:8088//tags/weui"/>
+      <category term="weui" scheme="https://aotu.io/tags/weui"/>
     
-      <category term="wsxx" scheme="http://localhost:8088//tags/wsxx"/>
+      <category term="wsxx" scheme="https://aotu.io/tags/wsxx"/>
     
-      <category term="小程序" scheme="http://localhost:8088//tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F"/>
+      <category term="小程序" scheme="https://aotu.io/tags/%25E5%25B0%258F%25E7%25A8%258B%25E5%25BA%258F"/>
     
   </entry>
   
   <entry>
     <title>轻氧 - 2016年末最新款互联网专业资讯 APP</title>
-    <link href="http://localhost:8088//notes/2016-11-09/liteo2-app"/>
-    <id>http://localhost:8088//notes/2016-11-09/liteo2-app</id>
+    <link href="https://aotu.io/notes/2016-11-09/liteo2-app"/>
+    <id>https://aotu.io/notes/2016-11-09/liteo2-app</id>
     <published>2016-11-09T14:21:43.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1751,21 +1751,21 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="移动开发" scheme="http://localhost:8088//cates/appdev"/>
+      <category term="移动开发" scheme="https://aotu.io/cates/appdev"/>
     
     
-      <category term="liteo2" scheme="http://localhost:8088//tags/liteo2"/>
+      <category term="liteo2" scheme="https://aotu.io/tags/liteo2"/>
     
-      <category term="app" scheme="http://localhost:8088//tags/app"/>
+      <category term="app" scheme="https://aotu.io/tags/app"/>
     
-      <category term="ios" scheme="http://localhost:8088//tags/ios"/>
+      <category term="ios" scheme="https://aotu.io/tags/ios"/>
     
   </entry>
   
   <entry>
     <title>深入了解font-weight</title>
-    <link href="http://localhost:8088//notes/2016-11-09/css3fontweight"/>
-    <id>http://localhost:8088//notes/2016-11-09/css3fontweight</id>
+    <link href="https://aotu.io/notes/2016-11-09/css3fontweight"/>
+    <id>https://aotu.io/notes/2016-11-09/css3fontweight</id>
     <published>2016-11-08T16:34:58.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1777,19 +1777,19 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="font-weight" scheme="http://localhost:8088//tags/font-weight"/>
+      <category term="font-weight" scheme="https://aotu.io/tags/font-weight"/>
     
-      <category term="css3" scheme="http://localhost:8088//tags/css3"/>
+      <category term="css3" scheme="https://aotu.io/tags/css3"/>
     
   </entry>
   
   <entry>
     <title>我的第一次移动端页面制作 — 总结与思考</title>
-    <link href="http://localhost:8088//notes/2016-11-09/first-mobile-rebuild"/>
-    <id>http://localhost:8088//notes/2016-11-09/first-mobile-rebuild</id>
+    <link href="https://aotu.io/notes/2016-11-09/first-mobile-rebuild"/>
+    <id>https://aotu.io/notes/2016-11-09/first-mobile-rebuild</id>
     <published>2016-11-08T16:22:23.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1958,21 +1958,21 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="项目总结" scheme="http://localhost:8088//cates/projreview"/>
+      <category term="项目总结" scheme="https://aotu.io/cates/projreview"/>
     
     
-      <category term="html" scheme="http://localhost:8088//tags/html"/>
+      <category term="html" scheme="https://aotu.io/tags/html"/>
     
-      <category term="css" scheme="http://localhost:8088//tags/css"/>
+      <category term="css" scheme="https://aotu.io/tags/css"/>
     
-      <category term="mobile rebuild" scheme="http://localhost:8088//tags/mobile-rebuild"/>
+      <category term="mobile rebuild" scheme="https://aotu.io/tags/mobile-rebuild"/>
     
   </entry>
   
   <entry>
     <title>APNG 那些事</title>
-    <link href="http://localhost:8088//notes/2016-11-08/apng"/>
-    <id>http://localhost:8088//notes/2016-11-08/apng</id>
+    <link href="https://aotu.io/notes/2016-11-08/apng"/>
+    <id>https://aotu.io/notes/2016-11-08/apng</id>
     <published>2016-11-07T17:48:31.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -1998,19 +1998,19 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="性能优化" scheme="http://localhost:8088//cates/perf"/>
+      <category term="性能优化" scheme="https://aotu.io/cates/perf"/>
     
     
-      <category term="APNG" scheme="http://localhost:8088//tags/apng"/>
+      <category term="APNG" scheme="https://aotu.io/tags/apng"/>
     
-      <category term="性能优化" scheme="http://localhost:8088//tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"/>
+      <category term="性能优化" scheme="https://aotu.io/tags/%25E6%2580%25A7%25E8%2583%25BD%25E4%25BC%2598%25E5%258C%2596"/>
     
   </entry>
   
   <entry>
     <title>border-image 的正确用法</title>
-    <link href="http://localhost:8088//notes/2016-11-03/border-image"/>
-    <id>http://localhost:8088//notes/2016-11-03/border-image</id>
+    <link href="https://aotu.io/notes/2016-11-03/border-image"/>
+    <id>https://aotu.io/notes/2016-11-03/border-image</id>
     <published>2016-11-02T21:22:23.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2055,21 +2055,21 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="border image" scheme="http://localhost:8088//tags/border-image"/>
+      <category term="border image" scheme="https://aotu.io/tags/border-image"/>
     
-      <category term="css3 border-image" scheme="http://localhost:8088//tags/css3-border-image"/>
+      <category term="css3 border-image" scheme="https://aotu.io/tags/css3-border-image"/>
     
-      <category term="边框图片" scheme="http://localhost:8088//tags/%E8%BE%B9%E6%A1%86%E5%9B%BE%E7%89%87"/>
+      <category term="边框图片" scheme="https://aotu.io/tags/%25E8%25BE%25B9%25E6%25A1%2586%25E5%259B%25BE%25E7%2589%2587"/>
     
   </entry>
   
   <entry>
     <title>AdobeMax 2016回顾</title>
-    <link href="http://localhost:8088//notes/2016-11-03/AdobeMax2016"/>
-    <id>http://localhost:8088//notes/2016-11-03/AdobeMax2016</id>
+    <link href="https://aotu.io/notes/2016-11-03/AdobeMax2016"/>
+    <id>https://aotu.io/notes/2016-11-03/AdobeMax2016</id>
     <published>2016-11-02T21:22:23.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2081,19 +2081,19 @@ ipcMain.on(<span class=hljs-string>"filter-response"</span>, (event, arg) => {
     
     </summary>
     
-      <category term="体验报告" scheme="http://localhost:8088//cates/reports"/>
+      <category term="体验报告" scheme="https://aotu.io/cates/reports"/>
     
     
-      <category term="AdobeMax" scheme="http://localhost:8088//tags/adobemax"/>
+      <category term="AdobeMax" scheme="https://aotu.io/tags/adobemax"/>
     
-      <category term="CreativeCloud" scheme="http://localhost:8088//tags/creativecloud"/>
+      <category term="CreativeCloud" scheme="https://aotu.io/tags/creativecloud"/>
     
   </entry>
   
   <entry>
     <title>Javascript 中的装饰器</title>
-    <link href="http://localhost:8088//notes/2016-10-25/decorator"/>
-    <id>http://localhost:8088//notes/2016-10-25/decorator</id>
+    <link href="https://aotu.io/notes/2016-10-25/decorator"/>
+    <id>https://aotu.io/notes/2016-10-25/decorator</id>
     <published>2016-10-24T20:49:11.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2205,19 +2205,19 @@ bunny.run();
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="decorator" scheme="http://localhost:8088//tags/decorator"/>
+      <category term="decorator" scheme="https://aotu.io/tags/decorator"/>
     
-      <category term="装饰器" scheme="http://localhost:8088//tags/%E8%A3%85%E9%A5%B0%E5%99%A8"/>
+      <category term="装饰器" scheme="https://aotu.io/tags/%25E8%25A3%2585%25E9%25A5%25B0%25E5%2599%25A8"/>
     
   </entry>
   
   <entry>
     <title>CSS3 Mask 安利报告</title>
-    <link href="http://localhost:8088//notes/2016-10-20/css3-mask"/>
-    <id>http://localhost:8088//notes/2016-10-20/css3-mask</id>
+    <link href="https://aotu.io/notes/2016-10-20/css3-mask"/>
+    <id>https://aotu.io/notes/2016-10-20/css3-mask</id>
     <published>2016-10-19T18:48:16.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2399,21 +2399,21 @@ mask-size: <span class=hljs-string>[mask-size]</span>;</code></pre><h2 id=2-图�
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="css3 mask" scheme="http://localhost:8088//tags/css3-mask"/>
+      <category term="css3 mask" scheme="https://aotu.io/tags/css3-mask"/>
     
-      <category term="css3 mask-border" scheme="http://localhost:8088//tags/css3-mask-border"/>
+      <category term="css3 mask-border" scheme="https://aotu.io/tags/css3-mask-border"/>
     
-      <category term="css3 蒙层" scheme="http://localhost:8088//tags/css3-%E8%92%99%E5%B1%82"/>
+      <category term="css3 蒙层" scheme="https://aotu.io/tags/css3-%25E8%2592%2599%25E5%25B1%2582"/>
     
   </entry>
   
   <entry>
     <title>Vue2.0 新手完全填坑攻略——从环境搭建到展示豆瓣的电影列表</title>
-    <link href="http://localhost:8088//notes/2016-10-13/vue2"/>
-    <id>http://localhost:8088//notes/2016-10-13/vue2</id>
+    <link href="https://aotu.io/notes/2016-10-13/vue2"/>
+    <id>https://aotu.io/notes/2016-10-13/vue2</id>
     <published>2016-10-13T10:31:35.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2670,19 +2670,19 @@ Vue.use(Element)</code></pre><p>保存，这时候程序报错<blockquote><p>Unc
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="Vue" scheme="http://localhost:8088//tags/vue"/>
+      <category term="Vue" scheme="https://aotu.io/tags/vue"/>
     
-      <category term="NodeJS" scheme="http://localhost:8088//tags/nodejs"/>
+      <category term="NodeJS" scheme="https://aotu.io/tags/nodejs"/>
     
   </entry>
   
   <entry>
     <title>H5直播起航</title>
-    <link href="http://localhost:8088//notes/2016-10-09/HTML5-SopCast"/>
-    <id>http://localhost:8088//notes/2016-10-09/HTML5-SopCast</id>
+    <link href="https://aotu.io/notes/2016-10-09/HTML5-SopCast"/>
+    <id>https://aotu.io/notes/2016-10-09/HTML5-SopCast</id>
     <published>2016-10-09T15:24:41.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2742,21 +2742,21 @@ ffmpeg -re -<span class=hljs-selector-tag>i</span> /Users/gao/Desktop/video/test
     
     </summary>
     
-      <category term="Web开发" scheme="http://localhost:8088//cates/webdev"/>
+      <category term="Web开发" scheme="https://aotu.io/cates/webdev"/>
     
     
-      <category term="H5" scheme="http://localhost:8088//tags/h5"/>
+      <category term="H5" scheme="https://aotu.io/tags/h5"/>
     
-      <category term="H5 视频直播 video" scheme="http://localhost:8088//tags/h5-%E8%A7%86%E9%A2%91%E7%9B%B4%E6%92%AD-video"/>
+      <category term="H5 视频直播 video" scheme="https://aotu.io/tags/h5-%25E8%25A7%2586%25E9%25A2%2591%25E7%259B%25B4%25E6%2592%25AD-video"/>
     
-      <category term="HLS、RTMP协议" scheme="http://localhost:8088//tags/hls-rtmp%E5%8D%8F%E8%AE%AE"/>
+      <category term="HLS、RTMP协议" scheme="https://aotu.io/tags/hls-rtmp%25E5%258D%258F%25E8%25AE%25AE"/>
     
   </entry>
   
   <entry>
     <title>凹凸实验室博客V1.0.0发布</title>
-    <link href="http://localhost:8088//notes/2015-10-08/aotu-blog-v1"/>
-    <id>http://localhost:8088//notes/2015-10-08/aotu-blog-v1</id>
+    <link href="https://aotu.io/notes/2015-10-08/aotu-blog-v1"/>
+    <id>https://aotu.io/notes/2015-10-08/aotu-blog-v1</id>
     <published>2015-10-08T10:24:35.000Z</published>
     <updated>2017-05-25T09:11:19.000Z</updated>
     
@@ -2787,12 +2787,12 @@ ffmpeg -re -<span class=hljs-selector-tag>i</span> /Users/gao/Desktop/video/test
     
     </summary>
     
-      <category term="项目总结" scheme="http://localhost:8088//cates/projreview"/>
+      <category term="项目总结" scheme="https://aotu.io/cates/projreview"/>
     
     
-      <category term="Hexo" scheme="http://localhost:8088//tags/hexo"/>
+      <category term="Hexo" scheme="https://aotu.io/tags/hexo"/>
     
-      <category term="项目总结" scheme="http://localhost:8088//tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93"/>
+      <category term="项目总结" scheme="https://aotu.io/tags/%25E9%25A1%25B9%25E7%259B%25AE%25E6%2580%25BB%25E7%25BB%2593"/>
     
   </entry>
   
