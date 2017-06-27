@@ -3,7 +3,7 @@
         <router-link class="pagination-next" :to="urlBuilder(nextPage)"  :disabled="outOfRegion(formatCurrentPage + 1)">{{next}}</router-link>
         <router-link class="pagination-previous" :to="urlBuilder(prevPage)" :disabled="outOfRegion(formatCurrentPage - 1)">{{prev}}</router-link>
         <ul class="pagination-list" >
-            <li v-for="item in pagingList" >
+            <li v-for="item in pagingList">
             <router-link v-if="item !== '...'" :class="getPagingClassName(item)" :to="urlBuilder(item)">{{ item }}</router-link>
             <span v-else class="pagination-ellipsis">...</span>
             </li>

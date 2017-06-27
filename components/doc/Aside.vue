@@ -3,18 +3,7 @@
     <div class="affix-sec is-expanded" v-if="toc">
       <button class="collapser" @click="collapse"></button>
       <h3 class="affix-title">{{ $t('text.toc') }}</h3>
-      <post-toc :toc="toc"></post-toc>
-    </div>
-    <div class="affix-sec is-expanded" v-if="tags.length > 0">
-      <button class="collapser" @click="collapse"></button>
-      <h3 class="affix-title">{{ $t('text.postTags') }}</h3>
-      <div class="affix-ct">
-        <ul class="post-tags">
-          <li v-for="item in tags" class="post-tag" :key="item.route">
-            <a :href="item.route" :title="item.title" class="post-tag-link" :class="'post-tag-w' + item.weight"># {{ item.title }}</a>
-          </li>
-        </ul>
-      </div>
+      <doc-toc :cate="cate" :list="toc"></doc-toc>
     </div>
     <div class="affix-sec is-expanded qrcode">
       <button class="collapser" @click="collapse"></button>
@@ -28,13 +17,13 @@
 
 <script>
 import Affix from '~components/common/Affix.vue'
-import PostToc from '~components/post/TOC.vue'
+import DocToc from '~components/doc/Outline.vue'
 import Dom from '~components/utils/Dom.js'
 import EventListener from '~components/utils/EventListener.js'
 import Debounce from '~components/utils/Debounce.js'
 export default {
   props: {
-    post: {
+    outline: {
       type: Object,
       required: true
     }
@@ -45,11 +34,11 @@ export default {
     }
   },
   computed: {
-    tags () {
-      return this.post.tags
+    cate () {
+      return this.outline.cate
     },
     toc () {
-      return this.post.tocData
+      return this.outline.toc
     }
   },
   methods: {
@@ -67,7 +56,7 @@ export default {
   },
   components: {
     Affix,
-    PostToc
+    DocToc
   },
   mounted () {
     this.resizeEvent = EventListener.listen(window, 'resize', Debounce(this.resizing, 100))
@@ -86,18 +75,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/css/base/_base.styl';
-.post-tags
-  display: flex
-  flex-wrap: wrap
-  align-items: baseline
-  justify-content: space-between
-  text-transform: uppercase
-  letter-spacing: 0.02em
-.post-tag
-  display: flex
-  align-items: center
-  &-link
-    transition: all .3s ease
-    padding: 4px 0
-    margin-bottom: 10px
+.affix
+  +tablet()
+    float: left
 </style>

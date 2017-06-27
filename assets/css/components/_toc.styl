@@ -1,0 +1,56 @@
+.toc
+  &-hidden
+    //overflow-y: visible
+    +tablet()
+      //overflow-y: auto
+  &-toggler
+    background-color: rgba(53, 73, 94, 0.70)
+    width: 18px
+    height: 30px
+    position: fixed
+    top: 75px
+    right: 20px
+    z-index: 980
+    cursor: pointer
+    .icon
+      color: #fff
+      margin-left: 7px
+      margin-top: 13px
+    &:before, &:after
+      content: " "
+      width: 0
+      height: 0
+      top: 0
+      position: absolute
+    &:before
+      border-right: 10px solid
+      border-top: 15px solid transparent
+      border-bottom: 15px solid transparent
+      left: -10px
+      border-right-color: rgba(53, 73, 94, 0.70)
+    &:after
+      border-left: 10px solid
+      border-top: 15px solid transparent
+      border-bottom: 15px solid transparent
+      right: -10px
+      border-left-color: rgba(53, 73, 94, 0.70)
+    &-hidden
+      display: none
+      +tablet()
+        display: none
+  &-list
+    list-style: none
+    margin: 0
+    padding: 0
+    &-item
+      padding: 2px 0
+    &-link
+      display: block
+      font-size: 15px
+      text-decoration: none
+      padding: 2px 8px
+      border-radius: 4px
+      letter-spacing: 0.25px
+      &-active, &:hover
+        font-weight: 400
+        background-color: $bg-block
