@@ -36,8 +36,7 @@
     margin-bottom: $fgs-section-mb
   +tablet()
     width: $post-width-tablet
-    padding-left $fgs-gutter
-    float: right
+    padding-right $fgs-gutter
   +desktop()
     width: $post-width-desktop
   +widescreen()

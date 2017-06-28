@@ -4,11 +4,11 @@
       <div class="icon more-vertical"></div>
     </div>
     <ul class="toc-list">
-      <li v-for="(content, index) in finalToc" class="toc-list-item">
+      <li v-for="(content, index) in finalToc" class="toc-item">
         <a :href="path + content.to"
             @click.prevent="scrollTo(content.to)"
-            class="toc-list-link"
-            :class="{'toc-list-link-active': current === index}">
+            class="toc-link"
+            :class="{'toc-link-active': current === index}">
           {{ content.name }}
         </a>
       </li>

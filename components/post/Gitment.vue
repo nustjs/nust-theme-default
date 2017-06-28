@@ -35,4 +35,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/css/base/_base.styl';
+.comments
+  border-top: 1px solid lighten($color-border, 10%)
+  margin-top: $fgs-section-mb
 </style>

@@ -38,19 +38,59 @@
       display: none
       +tablet()
         display: none
+  &-title
+    font-size: 15px
+    font-weight: 400
+    color: $color-grey
+    margin: $fgs-gutter 0 5px
+    position: relative
+    padding-left: 10px
+    &:before
+      position: absolute
+      content: ''
+      width: 4px
+      height: 4px
+      background: $color-theme
+      top: 50%
+      margin-top: -2px
+      left: 0
   &-list
     list-style: none
     margin: 0
     padding: 0
-    &-item
-      padding: 2px 0
-    &-link
-      display: block
-      font-size: 15px
-      text-decoration: none
-      padding: 2px 8px
-      border-radius: 4px
-      letter-spacing: 0.25px
-      &-active, &:hover
-        font-weight: 400
-        background-color: $bg-block
+  &-item
+    padding: 2px 0
+  &-link
+    display: block
+    font-size: 15px
+    text-decoration: none
+    padding: 2px 8px
+    border-radius: 4px
+    letter-spacing: 0.25px
+    &-active, &:hover
+      font-weight: 400
+      background-color: $bg-block
+    &-active
+      cursor: default
+      &:hover
+        color: $color-link
+  &-slist
+    padding-left: $fgs-gutter
+  &-slink
+    display: block
+    font-size: 14px
+    text-decoration: none
+    letter-spacing: .25px
+    position: relative
+    &-active
+      color: $color-accent
+    &:before
+      content: " "
+      width: 0
+      height: 0
+      top: 7px
+      left: -10px
+      position: absolute
+      border-left: 4px solid #dbdfe1
+      border-top: 4px solid transparent
+      border-bottom: 4px solid transparent

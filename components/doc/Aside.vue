@@ -75,7 +75,4 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/css/base/_base.styl';
-.affix
-  +tablet()
-    float: left
 </style>

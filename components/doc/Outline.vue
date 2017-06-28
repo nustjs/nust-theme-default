@@ -6,18 +6,18 @@
     <template v-for="group in list">
       <h3 class="toc-title">{{ group.title }}</h3>
       <ul class="toc-list">
-        <li class="toc-list-item" v-for="link in group.links">
-          <nuxt-link class="toc-list-link"
-                     :class="{'toc-list-link-active': path === menu + link.to}"
-                     :to="menu + link.to" exact>
+        <li class="toc-item" v-for="link in group.links">
+          <nuxt-link class="toc-link"
+                     :class="{'toc-link-active': path ===  link.to}"
+                     :to="link.to" exact>
             {{ link.name }}
           </nuxt-link>
-          <ul v-if="path === menu + link.to" class="toc-slist">
-            <li v-for="(content, index) in link.toc" class="toc-slist-item">
-              <a :href="menu + link.to + content.to"
+          <ul v-if="path === link.to" class="toc-slist">
+            <li v-for="(content, index) in link.toc" class="toc-sitem">
+              <a :href="link.to + content.to"
                   @click.prevent="scrollTo(content.to)"
-                  class="toc-slist-link"
-                  :class="{'toc-slist-link-active': current === index}">
+                  class="toc-slink"
+                  :class="{'toc-slink-active': current === index}">
                 {{ content.name }}
               </a>
             </li>
@@ -38,6 +38,10 @@ export default {
     cate: {
       type: String,
       required: true
+    },
+    urlPrefix: {
+      type: String,
+      default: '/docs/'
     }
   },
   mounted () {
@@ -54,14 +58,16 @@ export default {
   },
   computed: {
     visible () { return this.$store.state.visibleOutline },
-    path () { return this.$route.path.slice(-1) === '/' ? this.$route.path.slice(0, -1) : this.$route.path },
-    menu () { return '/' + this.cate },
+    path () {
+      let ret = this.$route.path.slice(-1) === '/' ? this.$route.path.slice(0, -1) : this.$route.path
+      return ret.substr(ret.indexOf(this.urlPrefix) + this.urlPrefix.length - 1)
+    },
     toc () {
       var c = []
       this.list.forEach((group) => {
         if (group.links && !c.length) {
           var l = group.links.find((link) => {
-            return this.path === this.menu + link.to
+            return this.path === link.to
           })
           if (l && l.toc) {
             l.toc.forEach((content) => {
