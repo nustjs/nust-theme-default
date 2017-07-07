@@ -54,8 +54,7 @@ export default {
       if (['', 'is-centered', 'is-right'].indexOf(this.modifiers.trim()) >= 0) {
         return 'pagination ' + this.modifiers
       }
-      console.warn(" modifiers %s is not within the options ", this.modifiers, optional,// eslint-disable-line
-      '\n see more detail https://github.com/vue-bulma/vue-bulma-pagination#doc')
+      console.warn(" modifiers %s is not within the options ", this.modifiers, optional, '\n see more detail https://github.com/vue-bulma/vue-bulma-pagination#doc') //eslint-disable-line
       return 'pagination'
     },
     getPagingClassName (item) {

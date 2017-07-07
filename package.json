@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/nustjs/nust-theme-default#readme",
   "dependencies": {
-    "fuse.js": "^3.0.4",
+    "fuse.js": "^3.0.5",
     "gitment": "0.0.3",
-    "nust-generator-fuse": "latest",
     "nust-generator-feed": "latest",
+    "nust-generator-fuse": "latest",
     "nust-generator-sitemap": "latest",
     "vue-infinite-loading": "^2.1.3"
   },

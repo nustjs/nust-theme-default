@@ -90,7 +90,7 @@ export default {
       if (this.page === this.total) {
         this.page = 1
       } else {
-        this.page ++
+        this.page++
       }
     },
     onPageClick (evt) {

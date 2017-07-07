@@ -44,7 +44,7 @@ export default {
         this.$refs.infiniteLoading.$destroy()
         return
       }
-      this.current ++
+      this.current++
       let url = this.apiUrl(this.current)
       let res = await axios.get(url)
       this.timer = setTimeout(() => {
